@@ -5,7 +5,7 @@
    agency PR, luxury retail — not a generic timeline.
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Beth+Ellen&display=swap');
 
 :root {
   /* -- Color tokens -- */
@@ -21,6 +21,7 @@
 
   /* -- Type -- */
   --font-display: 'Fraunces', 'Georgia', serif;
+  --font-script: 'Beth Ellen', cursive;
   --font-body: 'Work Sans', -apple-system, sans-serif;
   --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
 
@@ -88,9 +89,9 @@ a:hover { text-decoration: underline; }
 }
 
 .masthead-name {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: clamp(2rem, 5vw, 3.1rem);
+  font-family: var(--font-script);
+  font-weight: 400;
+  font-size: clamp(2.6rem, 6.5vw, 4rem);
   letter-spacing: 0.01em;
   margin: 0;
   color: var(--ink);
@@ -241,9 +242,10 @@ nav.masthead-nav a[aria-current="page"] {
 
 .section-head {
   display: flex;
-  align-items: baseline;
+  align-items: flex-end;
   gap: 14px;
   margin-bottom: 30px;
+  padding-bottom: 6px;
 }
 
 .section-number {
@@ -253,9 +255,9 @@ nav.masthead-nav a[aria-current="page"] {
 }
 
 .section-title {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 1.9rem;
+  font-family: var(--font-script);
+  font-weight: 400;
+  font-size: 2.6rem;
   margin: 0;
   color: var(--ink);
 }
