@@ -42,6 +42,30 @@ js/main.js        Mobile nav + scroll reveal
 assets/           Résumé PDF
 ```
 
+## Using the nikoline.com domain
+
+A `CNAME` file with `nikoline.com` is already in this folder, which is what
+GitHub Pages needs to serve the site on that domain instead of the default
+`<username>.github.io` address.
+
+1. Confirm the domain registration is still active (check the WordPress.com
+   account under Domains, or wherever it was originally registered) — the
+   earlier WordPress error was about the *domain-to-site connection*, not
+   necessarily the registration itself, so it may well still be hers.
+2. At the domain's DNS provider, add four **A records** for the apex domain
+   pointing to:
+   ```
+   185.199.108.153
+   185.199.109.153
+   185.199.110.153
+   185.199.111.153
+   ```
+   and a **CNAME record** for `www` pointing to `<username>.github.io`.
+3. In the GitHub repo: **Settings → Pages → Custom domain** → enter
+   `nikoline.com` → Save.
+4. Wait for DNS to propagate (usually well under an hour, occasionally up to
+   24), then check **Enforce HTTPS** once GitHub shows a green checkmark.
+
 ## Adding a Portfolio/Press page later
 
 Once there are real writing samples, press clips, or event photos to show, a
