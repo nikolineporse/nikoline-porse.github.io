@@ -9,7 +9,7 @@
 
 :root {
   /* -- Color tokens -- */
-  --paper: #F1ECE1;      /* warm bone paper, background */
+  --paper: #FFFFFF;      /* white background */
   --card: #FBF8F1;       /* lifted card surface */
   --ink: #201D1B;        /* near-black ink, warm cast — body text */
   --oxblood: #7A2331;    /* deep garnet — primary accent, press/editorial */
