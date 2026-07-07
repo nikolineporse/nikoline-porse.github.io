@@ -5,25 +5,25 @@
    agency PR, luxury retail — not a generic timeline.
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Beth+Ellen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,500&family=Beth+Ellen&display=swap');
 
 :root {
   /* -- Color tokens -- */
   --paper: #FFFFFF;      /* white background */
   --card: #FBF8F1;       /* lifted card surface */
-  --ink: #201D1B;        /* near-black ink, warm cast — body text */
-  --oxblood: #7A2331;    /* deep garnet — primary accent, press/editorial */
-  --oxblood-deep: #5C1A24;
-  --brass: #A3812E;      /* muted brass/gold — secondary accent, used sparingly */
-  --slate: #66605A;      /* muted warm grey — secondary text, rules */
+  --ink: #000000;        /* body text — black */
+  --oxblood: #000000;    /* primary accent — black */
+  --oxblood-deep: #000000;
+  --brass: #000000;      /* secondary accent — black */
+  --slate: #000000;      /* secondary text — black */
   --slate-light: #DCD5C6; /* hairline rule color on paper */
   --paper-shadow: rgba(32, 29, 27, 0.08);
 
   /* -- Type -- */
-  --font-display: 'Fraunces', 'Georgia', serif;
+  --font-display: 'Spectral', 'Georgia', serif;
   --font-script: 'Beth Ellen', cursive;
-  --font-body: 'Work Sans', -apple-system, sans-serif;
-  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+  --font-body: 'Spectral', 'Georgia', serif;
+  --font-mono: 'Spectral', 'Georgia', serif;
 
   --max-width: 1080px;
 }
@@ -49,6 +49,7 @@ body {
   background: var(--paper);
   color: var(--ink);
   font-family: var(--font-body);
+  font-weight: 300;
   font-size: 17px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
