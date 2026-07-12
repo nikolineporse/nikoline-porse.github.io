@@ -215,39 +215,6 @@ nav.masthead-nav a[aria-current="page"] {
   color: var(--oxblood);
 }
 
-/* ---------- As Seen strip ---------- */
-
-.seen-strip {
-  border-top: 1px solid var(--ink);
-  border-bottom: 1px solid var(--slate-light);
-  padding: 20px 0;
-}
-
-.seen-label {
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--slate);
-  margin: 0 0 12px;
-}
-
-.seen-items {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px 28px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-family: var(--font-display);
-  font-size: 1.05rem;
-  color: var(--ink);
-}
-
-.seen-items li::after {
-  content: '';
-}
-
 /* ---------- Section ---------- */
 
 .section {
