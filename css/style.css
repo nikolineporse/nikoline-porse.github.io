@@ -171,6 +171,23 @@ nav.masthead-nav a[aria-current="page"] {
   flex-wrap: wrap;
 }
 
+.hero-centered {
+  text-align: center;
+}
+
+.hero-centered .hero-eyebrow {
+  text-align: center;
+}
+
+.hero-centered .hero-sub {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-centered .cta-row {
+  justify-content: center;
+}
+
 .btn {
   display: inline-block;
   font-family: var(--font-mono);
