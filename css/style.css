@@ -10,7 +10,7 @@
 :root {
   /* -- Color tokens -- */
   --paper: #FFFFFF;      /* white background */
-  --card: #FBF8F1;       /* lifted card surface */
+  --card: #EDD2E1;       /* lifted card surface — mauve (#D69BBD) with a white wash, same fade used on the stripes */
   --ink: #000000;        /* body text — black */
   --oxblood: #000000;    /* primary accent — black */
   --oxblood-deep: #000000;
