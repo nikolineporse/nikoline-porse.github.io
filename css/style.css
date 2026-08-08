@@ -391,8 +391,6 @@ nav.masthead-nav a[aria-current="page"] {
 }
 
 .edu-meta {
-  font-family: var(--font-mono);
-  font-size: 0.76rem;
   color: var(--slate);
 }
 
