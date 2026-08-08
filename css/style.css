@@ -18,6 +18,8 @@
   --slate: #000000;      /* secondary text — black */
   --slate-light: #DCD5C6; /* hairline rule color on paper */
   --paper-shadow: rgba(32, 29, 27, 0.08);
+  --pattern-stripe-a: #C2E8B1; /* green vertical pinstripe */
+  --pattern-stripe-b: #73B0BB; /* teal vertical pinstripe */
 
   /* -- Type -- */
   --font-display: 'Spectral', 'Georgia', serif;
@@ -46,7 +48,13 @@ html {
 
 body {
   margin: 0;
-  background: var(--paper);
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--pattern-stripe-a) 0px,
+    var(--pattern-stripe-a) 4px,
+    var(--pattern-stripe-b) 4px,
+    var(--pattern-stripe-b) 8px
+  );
   color: var(--ink);
   font-family: var(--font-body);
   font-weight: 300;
@@ -70,6 +78,33 @@ a:hover { text-decoration: underline; }
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 28px;
+}
+
+/* ---------- Quiet pattern ----------
+   Text reads best without a texture behind it, so the pattern is pushed
+   out to the margins everywhere and every block of copy sits on solid
+   white. */
+
+main .hero,
+main .section {
+  padding: 40px 5%;
+}
+
+main .hero .wrap,
+main .section .wrap {
+  background: var(--paper);
+  padding: 34px 36px;
+}
+
+@media (max-width: 640px) {
+  main .hero,
+  main .section {
+    padding: 28px 4%;
+  }
+  main .hero .wrap,
+  main .section .wrap {
+    padding: 24px 22px;
+  }
 }
 
 /* ---------- Masthead ---------- */
@@ -133,10 +168,6 @@ nav.masthead-nav a[aria-current="page"] {
 }
 
 /* ---------- Hero ---------- */
-
-.hero {
-  padding: 64px 0 56px;
-}
 
 .hero-eyebrow {
   font-family: var(--font-mono);
@@ -218,11 +249,7 @@ nav.masthead-nav a[aria-current="page"] {
 /* ---------- Section ---------- */
 
 .section {
-  padding: 56px 0;
-}
-
-.section + .section {
-  border-top: 1px solid var(--slate-light);
+  padding: 0;
 }
 
 .section-head {
@@ -419,9 +446,22 @@ nav.masthead-nav a[aria-current="page"] {
 /* ---------- Footer ---------- */
 
 footer.site-footer {
+  padding: 0 5% 40px;
+}
+
+footer.site-footer .wrap {
+  background: var(--paper);
   border-top: 2px solid var(--ink);
-  padding: 26px 0 40px;
-  margin-top: 20px;
+  padding: 26px 32px 24px;
+}
+
+@media (max-width: 640px) {
+  footer.site-footer {
+    padding: 0 4% 28px;
+  }
+  footer.site-footer .wrap {
+    padding: 20px 22px 20px;
+  }
 }
 
 footer.site-footer p {
