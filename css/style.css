@@ -291,16 +291,8 @@ nav.masthead-nav a[aria-current="page"] {
 }
 
 .credential::before {
-  /* punch-hole detail, like a laminated event badge */
-  content: '';
-  position: absolute;
-  top: 22px;
-  right: 22px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--paper);
-  border: 1.5px solid var(--slate);
+  /* punch-hole detail removed */
+  display: none;
 }
 
 .credential-access {
