@@ -31,9 +31,11 @@ const WORK_EVENTS = [
     access: 'Event Activation',
     role: 'NYFW Gifting Suites',
     org: 'via CLD PR',
-    dateDisplay: null,
+    dateDisplay: 'September 2024',
     description: ['Coordinated celebrity seeding and press logistics across several gifting suites during New York Fashion Week'],
-    images: []
+    images: [
+      { src: 'assets/work/nyfw-gifting-suites-01.jpg', alt: 'Dozens of canvas CLD PR "NYFW September 2024" tote bags piled up, with cardboard signs marking VIP and press gifting sections' }
+    ]
   },
   {
     id: 'roger-federer-publication',
