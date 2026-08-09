@@ -51,9 +51,11 @@ const WORK_EVENTS = [
     access: 'Author Signing',
     role: 'Derrick Rose — Book Signing',
     org: 'Assouline',
-    dateDisplay: null,
+    dateDisplay: 'February 14, 2026',
     description: ['Partnered with in-house PR and events teams to plan the signing'],
-    images: []
+    images: [
+      { src: 'assets/work/derrick-rose-book-signing-01.jpg', alt: 'Derrick Rose signing copies of his book "The Poohprint" at Assouline, flanked by two colleagues holding bouquets of red roses, with a red accent wall and stacked book display behind' }
+    ]
   },
 ];
 
