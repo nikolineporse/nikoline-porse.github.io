@@ -44,41 +44,7 @@
         <h2 class="section-title">Where I've Been</h2>
       </div>
 
-      <div class="credential reveal">
-        <p class="credential-access">Event Activation</p>
-        <p class="credential-role">Cosmic Desert Party — Celsius</p>
-        <p class="credential-org">Coachella · via CLD PR</p>
-        <ul>
-          <li>Managed press logistics and tastemaker outreach for the activation</li>
-        </ul>
-      </div>
-
-      <div class="credential reveal">
-        <p class="credential-access">Event Activation</p>
-        <p class="credential-role">NYFW Gifting Suites</p>
-        <p class="credential-org">via CLD PR</p>
-        <ul>
-          <li>Coordinated celebrity seeding and press logistics across several gifting suites during New York Fashion Week</li>
-        </ul>
-      </div>
-
-      <div class="credential reveal">
-        <p class="credential-access">Product Launch</p>
-        <p class="credential-role">Roger Federer — Limited-Edition Publication</p>
-        <p class="credential-org">Assouline</p>
-        <ul>
-          <li>Partnered with in-house PR and events teams to plan the launch</li>
-        </ul>
-      </div>
-
-      <div class="credential reveal">
-        <p class="credential-access">Author Signing</p>
-        <p class="credential-role">Derrick Rose — Book Signing</p>
-        <p class="credential-org">Assouline</p>
-        <ul>
-          <li>Partnered with in-house PR and events teams to plan the signing</li>
-        </ul>
-      </div>
+      <div id="workEvents" class="work-events"></div>
     </div>
   </section>
 
@@ -156,6 +122,15 @@
     </div>
   </section>
 </main>
+
+<dialog id="eventModal" class="event-modal" aria-labelledby="eventModalTitle">
+  <div class="event-modal-inner section wrap">
+    <button type="button" class="event-modal-close" id="eventModalClose" aria-label="Close">✕</button>
+    <div class="event-modal-scroll">
+      <div id="eventModalBody"></div>
+    </div>
+  </div>
+</dialog>
 
 <footer class="site-footer">
   <div class="wrap">

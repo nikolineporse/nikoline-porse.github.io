@@ -222,6 +222,7 @@ nav.masthead-nav a[aria-current="page"] {
   text-transform: uppercase;
   padding: 13px 22px;
   border: 2px solid var(--ink);
+  background: var(--paper);
   color: var(--ink);
   transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
 }
@@ -343,6 +344,124 @@ nav.masthead-nav a[aria-current="page"] {
 
 .credential li::marker {
   color: var(--brass);
+}
+
+/* ---------- Work grid + event modal ---------- */
+
+.work-grid {
+  list-style: none;
+  margin: 0 0 32px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 6px;
+}
+
+.work-tile {
+  position: relative;
+  display: block;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: var(--ink);
+}
+
+.work-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.work-tile:hover img,
+.work-tile:focus-visible img {
+  transform: scale(1.04);
+}
+
+.work-tile-label {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  background: var(--paper);
+  border-top: 2px solid var(--ink);
+  padding: 8px 10px 7px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.85rem;
+  line-height: 1.25;
+  color: var(--ink);
+}
+
+.work-tile:hover .work-tile-label,
+.work-tile:focus-visible .work-tile-label {
+  transform: translateY(0);
+}
+
+.event-modal {
+  border: none;
+  padding: 0;
+  max-width: min(720px, 92vw);
+  width: 100%;
+  max-height: 88vh;
+  background: transparent;
+}
+
+.event-modal::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.event-modal-inner {
+  position: relative;
+  background-color: var(--paper);
+  border: 2px solid var(--ink);
+  padding: 34px 36px;
+}
+
+.event-modal-scroll {
+  max-height: 72vh;
+  overflow-y: auto;
+}
+
+@media (max-width: 640px) {
+  .event-modal-inner {
+    padding: 24px 22px;
+  }
+}
+
+.event-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--ink);
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.event-modal-close:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.event-modal-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.event-modal-gallery img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
 }
 
 /* ---------- Skills ---------- */
