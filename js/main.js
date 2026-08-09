@@ -40,9 +40,11 @@ const WORK_EVENTS = [
     access: 'Product Launch',
     role: 'Roger Federer — Limited-Edition Publication',
     org: 'Assouline',
-    dateDisplay: null,
+    dateDisplay: 'September 4, 2024',
     description: ['Partnered with in-house PR and events teams to plan the launch'],
-    images: []
+    images: [
+      { src: 'assets/work/roger-federer-limited-edition-publication-01.jpg', alt: 'Roger Federer seated at a signing table, pen in hand, surrounded by stacks of his limited-edition Assouline publication displayed against a red accent wall' }
+    ]
   },
   {
     id: 'derrick-rose-signing',
