@@ -49,6 +49,21 @@ const WORK_EVENTS = [
     ]
   },
   {
+    id: 'point-of-view-beauty-pop-up',
+    access: 'Freelance Activation',
+    role: 'Point of View Beauty Pop-Up',
+    org: 'Point of View Beauty',
+    dateDisplay: 'July 25–26, 2025',
+    description: [
+      "Assisted the Point of View Beauty team with brand storytelling and on-site education for the brand's first-ever pop-up, checking out customers interested in purchasing product",
+      'Supported event production — helping with setup and breakdown, and mapping the smartest flow of foot traffic through the space',
+      "Helped host what also served as a meet-and-greet, as TikTok beauty influencer and Point of View founder Mikayla Nogueira was on-site to celebrate the brand's new chapter with her followers and fans"
+    ],
+    images: [
+      { src: 'assets/work/point-of-view-beauty-pop-up-01.jpg', alt: 'Point of View Beauty skincare products — Drip It, Drench It, Whip It, Glaze It, and Amp It — displayed on a white pedestal beneath a large white floral arrangement against a blue wood-paneled wall' }
+    ]
+  },
+  {
     id: 'derrick-rose-signing',
     access: 'Author Signing',
     role: 'Derrick Rose — Book Signing',
