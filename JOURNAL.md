@@ -464,6 +464,13 @@ and-forth the first time; it shouldn't a second time.
 The final asset is `assets/work/point-of-view-beauty-pop-up-01.jpg`
 (~230KB, 1050×1400, in line with the site's other event photos).
 
+### 2026-08-09 — Larger "Where I've Been" photos on desktop
+Increased the minimum tile width in the interactive event grid from 160px to
+200px at computer-sized widths (900px and above), so the event photography is
+easier to see. The smaller-screen layout is intentionally unchanged. With the
+current five events, the wider desktop grid wraps naturally onto a second row
+rather than squeezing all five into one row.
+
 ## Gaps in this record
 
 This journal was authored retroactively, reconstructed from one long

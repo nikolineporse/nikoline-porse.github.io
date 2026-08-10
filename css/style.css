@@ -357,6 +357,12 @@ nav.masthead-nav a[aria-current="page"] {
   gap: 6px;
 }
 
+@media (min-width: 900px) {
+  .work-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
 .work-tile {
   position: relative;
   display: block;
