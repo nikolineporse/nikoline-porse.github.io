@@ -471,6 +471,22 @@ easier to see. The smaller-screen layout is intentionally unchanged. With the
 current five events, the wider desktop grid wraps naturally onto a second row
 rather than squeezing all five into one row.
 
+### 2026-08-09 — About page rewritten in Nikoline's voice
+Replaced the third-person career-summary bio with a first-person narrative based
+on a long writing sample from Nikoline. The approved direction is playful,
+candid and self-aware while still confidently showing off her range. It opens
+with her name pronunciation and Danish background, then includes her Southern
+California upbringing, University of Oregon education, post-grad role at
+Vanguard Logistics and five-suitcase move to New York. The career story now
+connects Aviator Nation, CLD PR, Assouline and Stacy McLaughlin Communications
+with specific accomplishments across media pitching, luxury client relations,
+Coachella, NYFW, celebrity book events, social content and major press
+placements. It closes with a concise statement of her professional range and a
+personal paragraph about travel, restaurants, hot yoga, learning Danish and
+vintage/sustainable shopping. A previewed draft briefly used the word "dansk"
+in the opening; Nikoline approved the rewrite after asking for that word to be
+removed.
+
 ## Gaps in this record
 
 This journal was authored retroactively, reconstructed from one long
