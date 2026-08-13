@@ -567,6 +567,13 @@ position. Replaced the stiff "Full Career Resume" heading with the direct
 label "RESUME:" and removed the redundant "PDF Download" line above the existing
 "Download PDF" button.
 
+### 2026-08-13 — Mobile resume group centered
+Centered the complete resume group on iOS/mobile so the `RESUME:` label shares
+the exact horizontal center of the Download PDF button beneath it. Desktop
+alignment remains unchanged. The mobile group uses one compact centered stack
+and removes the credential heading's standard right-side spacing so the label
+and button align by their actual dimensions.
+
 ## Gaps in this record
 
 This journal was authored retroactively, reconstructed from one long
