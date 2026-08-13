@@ -497,6 +497,28 @@ Contact. `experience.html` was deliberately preserved in the repository, with
 its navigation updated to match the four-item site menu, so the page can be
 restored easily if Nikoline wants to rethink or republish it later.
 
+### 2026-08-13 — Unboxed entries + Nikoline's hand-drawn star bullets
+Removed the mauve fill, inner border, rounded corners and shadow from every
+`.credential` entry after Nikoline flagged the heavy "box inside a box" effect.
+The entries now sit directly on the white section surface, separated by open
+space, while the black outer section borders remain.
+
+Several decorative directions were previewed before landing here. First, the
+mauve card became a flat editorial entry with a mauve left rule. Next, an
+original Victorian/English botanical embroidery motif was generated from
+historical needlework references and tried both as a spacer between entries and
+as an all-black trim replacing the outer section borders. Nikoline loved the
+motif but found its placement awkward, so it was removed from the live design
+and deliberately preserved at `assets/decor/victorian-lace-trim-1.png` under
+the name **Victorian Lace Trim 1** for a future use.
+
+The final personality detail came from Nikoline's own marker-drawn five-point
+star. A cleaned version preserves its irregular strokes, rounded ends and open
+center while remaining legible at bullet size; it lives at
+`assets/decor/nikoline-star-bullet.png`. It replaces standard round bullets only
+in the homepage "Currently" entries and Work's "What I've Placed" entries.
+Other lists keep their normal markers. All active ornament is black for now.
+
 ## Gaps in this record
 
 This journal was authored retroactively, reconstructed from one long
@@ -516,25 +538,25 @@ tried and reverted, since that's the hardest context to reconstruct after
 the fact from git history alone (reverted work often leaves no trace in
 `git log` at all if it was undone before committing).
 
-## Current state (as of 2026-08-09)
+## Current state (as of 2026-08-13)
 
 - **Background:** green/teal vertical pinstripe
   (`--pattern-stripe-a` / `--pattern-stripe-b`), faded with a 55% white
-  overlay, covering the whole page. No section has its own background —
-  text sits directly on the faded pattern.
+  overlay, visible in the space between white content boxes.
 - **Content boxes:** every major block (masthead, hero, each section,
   footer) has a plain white background and a `2px solid black` border,
   no rounded corners, no drop shadow.
-- **Credential cards:** mauve (`--card`), left-border accent, no access
-  label or punch-hole (on Currently/Experience; Work's cards still use an
-  access-style category tag).
+- **Credential entries:** unboxed and transparent, with no inner border,
+  rounded corners, shadow or mauve fill. Currently/Experience have no access
+  label or punch-hole; Work retains its category tags. Nikoline's hand-drawn
+  black star is the list marker in Currently and What I've Placed only.
 - **Fonts:** Beth Ellen (script wordmark + section headings) + Spectral
   (everything else, weight 300 default).
-- **Colors:** pure black for all text/ink/accent tokens; mauve for cards;
-  green/teal for the background pattern. No warm oxblood/brass remains
-  anywhere visually, only in variable *names*.
-- **Nav:** Home / About / Experience / Work / Contact, centered under a
-  centered masthead name, no tagline.
+- **Colors:** pure black for all text, ink and active ornament; white content
+  surfaces; green/teal background pattern. The mauve token and archived lace
+  asset remain available but mauve is not currently used in the interface.
+- **Nav:** Home / About / Work / Contact, centered under a centered masthead
+  name, no tagline. `experience.html` is preserved but not visibly linked.
 - **Work page:** "Where I've Been" (interactive photo grid + modal, 5
   events) and "What I've Placed" (4 press placements, most-recent-first,
   each with a real scanned PDF clip).

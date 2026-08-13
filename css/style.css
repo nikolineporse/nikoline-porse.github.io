@@ -10,7 +10,7 @@
 :root {
   /* -- Color tokens -- */
   --paper: #FFFFFF;      /* white background */
-  --card: #EDD2E1;       /* lifted card surface — mauve (#D69BBD) with a white wash, same fade used on the stripes */
+  --card: #EDD2E1;       /* retained mauve token for reversible experiments; not currently used */
   --ink: #000000;        /* body text — black */
   --oxblood: #000000;    /* primary accent — black */
   --oxblood-deep: #000000;
@@ -282,13 +282,12 @@ nav.masthead-nav a[aria-current="page"] {
 
 .credential {
   position: relative;
-  background: var(--card);
-  border: 1px solid var(--slate-light);
-  border-left: 5px solid var(--oxblood);
-  border-radius: 3px;
-  padding: 24px 26px 22px;
-  margin-bottom: 22px;
-  box-shadow: 0 1px 0 var(--paper-shadow);
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  margin-bottom: 32px;
+  box-shadow: none;
 }
 
 .credential::before {
@@ -344,6 +343,29 @@ nav.masthead-nav a[aria-current="page"] {
 
 .credential li::marker {
   color: var(--brass);
+}
+
+.page-home .credential ul,
+.page-work #what-ive-placed .credential ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.page-home .credential li,
+.page-work #what-ive-placed .credential li {
+  position: relative;
+  padding-left: 31px;
+}
+
+.page-home .credential li::before,
+.page-work #what-ive-placed .credential li::before {
+  content: '';
+  position: absolute;
+  top: 0.26em;
+  left: 0;
+  width: 19px;
+  height: 19px;
+  background: url('../assets/decor/nikoline-star-bullet.png') center / contain no-repeat;
 }
 
 /* ---------- Work grid + event modal ---------- */
