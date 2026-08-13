@@ -88,13 +88,19 @@ const WORK_EVENTS = [
   {
     id: 'derrick-rose-signing',
     access: 'Author Signing',
-    role: 'Derrick Rose — Book Signing',
+    role: 'Derrick Rose: The Poohprint',
     org: 'Assouline',
     dateDisplay: 'February 14, 2026',
     sortDate: '2026-02-14',
-    description: ['Partnered with in-house PR and events teams to plan the signing'],
+    description: [
+      'Managed event flow and on-site upkeep across the 50-person ticketed experience and public Assouline x Rose’s Flower Shop activation',
+      'Served as a guest-facing resource, sharing details about Derrick Rose: The Poohprint and answering questions throughout the event',
+      'Worked as Derrick Rose’s right hand throughout the event, providing hands-on support wherever it was needed'
+    ],
     images: [
-      { src: 'assets/work/derrick-rose-book-signing-01.jpg', alt: 'Derrick Rose signing copies of his book "The Poohprint" at Assouline, flanked by two colleagues holding bouquets of red roses, with a red accent wall and stacked book display behind' }
+      { src: 'assets/work/derrick-rose-book-signing-01.jpg', alt: 'Derrick Rose signing copies of his book "The Poohprint" at Assouline, flanked by two colleagues holding bouquets of red roses, with a red accent wall and stacked book display behind' },
+      { src: 'assets/work/derrick-rose-book-signing-02.jpg', alt: 'Derrick Rose greeting a guest outside the Assouline storefront during his Valentine’s Day book signing' },
+      { src: 'assets/work/derrick-rose-book-signing-03.jpg', alt: 'A bouquet of red roses displayed inside Assouline for Derrick Rose’s Valentine’s Day book signing' }
     ]
   },
 ];
@@ -105,12 +111,19 @@ function escapeHtml(str) {
   }[c]));
 }
 
+function formatEventText(str) {
+  return escapeHtml(str).replaceAll(
+    'Derrick Rose: The Poohprint',
+    '<strong><em>Derrick Rose: The Poohprint</em></strong>'
+  );
+}
+
 function buildCredentialCard(event) {
-  const descItems = event.description.map(d => `<li>${escapeHtml(d)}</li>`).join('');
+  const descItems = event.description.map(d => `<li>${formatEventText(d)}</li>`).join('');
   return `
     <div class="credential reveal">
       <p class="credential-access">${escapeHtml(event.access)}</p>
-      <p class="credential-role">${escapeHtml(event.role)}</p>
+      <p class="credential-role">${formatEventText(event.role)}</p>
       <p class="credential-org">${escapeHtml(event.org)}</p>
       <ul>${descItems}</ul>
     </div>
@@ -123,7 +136,7 @@ function buildTile(event) {
     <li>
       <a href="${escapeHtml(cover.src)}" class="work-tile reveal" data-event-id="${escapeHtml(event.id)}">
         <img src="${escapeHtml(cover.src)}" alt="" loading="lazy">
-        <span class="work-tile-label">${escapeHtml(event.role)}</span>
+        <span class="work-tile-label">${formatEventText(event.role)}</span>
       </a>
     </li>
   `;
@@ -201,13 +214,13 @@ function bindGalleryControls() {
 }
 
 function renderModalContent(event) {
-  const descItems = event.description.map(d => `<li>${escapeHtml(d)}</li>`).join('');
+  const descItems = event.description.map(d => `<li>${formatEventText(d)}</li>`).join('');
   const dateMarkup = event.dateDisplay
     ? `<p class="credential-meta"><span>${escapeHtml(event.dateDisplay)}</span></p>`
     : '';
   return `
     <p class="credential-access">${escapeHtml(event.access)}</p>
-    <h3 id="eventModalTitle" class="credential-role">${escapeHtml(event.role)}</h3>
+    <h3 id="eventModalTitle" class="credential-role">${formatEventText(event.role)}</h3>
     <p class="credential-org">${escapeHtml(event.org)}</p>
     ${dateMarkup}
     <ul>${descItems}</ul>

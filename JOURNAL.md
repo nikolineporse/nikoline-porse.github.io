@@ -681,6 +681,15 @@ tried and reverted, since that's the hardest context to reconstruct after
 the fact from git history alone (reverted work often leaves no trace in
 `git log` at all if it was undone before committing).
 
+### 2026-08-13 — Derrick Rose gallery expanded
+
+- Added two supplied event photos to the Derrick Rose book-signing gallery.
+- Kept the existing signing photo as the cover image.
+- Reused the fitted gallery, arrow controls, keyboard navigation, and iOS swipe behavior established for the Achille Salvagni event.
+- Renamed the event “Derrick Rose: The Poohprint” and expanded the description to highlight event-flow management, guest education and direct support for Derrick Rose.
+- Styled the complete book title in bold italics wherever it appears in the event tile and details.
+- Kept the event copy distinct: one bullet focuses on operations while another focuses on guest-facing book education.
+
 ## Current state (as of 2026-08-13)
 
 - **Background:** Sun-Dried Tomato/Nebulas Blue vertical pinstripe
@@ -702,8 +711,9 @@ the fact from git history alone (reverted work often leaves no trace in
   asset remain available but mauve is not currently used in the interface.
 - **Nav:** Home / About / Work / Contact, centered under a centered masthead
   name, no tagline. `experience.html` is preserved but not visibly linked.
-- **Work page:** "Where I've Been" (interactive photo grid + modal, 5
-  events) and "What I've Placed" (4 press placements, most-recent-first,
-  each with a real scanned PDF clip).
+- **Work page:** "Where I've Been" (interactive photo grid + fitted,
+  swipeable galleries for multi-image events, 6 events) and "What I've
+  Placed" (4 press placements, most-recent-first, each with a real scanned
+  PDF clip).
 - **Git:** `design_experiment` and `main` are in sync as of the last
   commit in the log above.
