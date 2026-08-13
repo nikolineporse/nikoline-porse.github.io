@@ -543,8 +543,30 @@ nav.masthead-nav a[aria-current="page"] {
 }
 
 @media (min-width: 721px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
   .contact-resume {
-    text-align: center;
+    grid-row: 1;
+    width: min(720px, 100%);
+    text-align: left;
+  }
+  .contact-resume .credential {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .contact-resume .credential-role {
+    margin: 0;
+    padding-right: 0;
+  }
+  .contact-resume .btn {
+    margin-top: 0 !important;
+  }
+  .contact-list {
+    grid-row: 2;
+    width: min(720px, 100%);
   }
 }
 

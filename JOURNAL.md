@@ -574,6 +574,13 @@ alignment remains unchanged. The mobile group uses one compact centered stack
 and removes the credential heading's standard right-side spacing so the label
 and button align by their actual dimensions.
 
+### 2026-08-13 — Desktop resume CTA promoted
+For a local desktop demo, moved the resume CTA directly beneath the Contact
+introduction and above the other contact methods. After previewing a horizontal
+row and then a centered stack, aligned the final stacked label and button to the
+same left edge as the introductory paragraph, Email, LinkedIn and Instagram.
+The approved centered iOS layout remains unchanged.
+
 ## Gaps in this record
 
 This journal was authored retroactively, reconstructed from one long
