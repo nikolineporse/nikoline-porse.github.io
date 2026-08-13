@@ -43,7 +43,7 @@ own purpose.
   rather than committing straight to `main`.
 - **Pages:** `index.html` (home), `about.html`, `experience.html`,
   `work.html`, `contact.html`. Nav is identical across all five.
-- **Assets:** `assets/nikoline-porse-resume.pdf` (the downloadable résumé,
+- **Assets:** `assets/nikoline-porse-resume.pdf` (the downloadable resume,
   linked from every page), `assets/press/*.pdf` (scanned press clips, one
   per placement on the Work page), `assets/work/*.jpg` (event photos for
   the "Where I've Been" interactive grid).
@@ -114,7 +114,7 @@ unnecessary and likely source of build flakiness.
 ### 2026-07-06 — Real contact info
 Replaced placeholder contact fields with the real ones: email
 (nikolineporse@me.com), LinkedIn, Instagram. **Explicit, standing
-constraint: no phone number anywhere on the site or in the résumé PDF** —
+constraint: no phone number anywhere on the site or in the resume PDF** —
 this was checked and confirmed clean at the time and should stay that way.
 Typography switched from the placeholder warm-cream/serif look to
 black-and-white with a serif body font (this is the point where the
@@ -175,7 +175,7 @@ underlying feature itself. Ask before deleting the whole thing.
 ### 2026-08-04 — The Work page gets real content (single long session)
 This was the day `work.html` went from skeleton to fully populated. In
 order:
-- Résumé PDF swapped for a revised 2026 version (same filename, so no
+- Resume PDF swapped for a revised 2026 version (same filename, so no
   links needed updating).
 - **Financial Times** press placement added (client: A La Vieille Russie,
   Winter Show 55th-anniversary coverage), with the actual scanned PDF
@@ -489,10 +489,10 @@ removed.
 
 ### 2026-08-13 — Experience removed from the visible site journey
 Removed Experience from the shared navigation because the page largely repeated
-the downloadable résumé without adding the personality of About or the proof of
+the downloadable resume without adding the personality of About or the proof of
 Work. The homepage's primary button now says "View My Work," its career-timeline
 link now points to Work, and About's former "View Full Experience" button now
-points to Work as well. Résumé downloads remain prominent on Home, About and
+points to Work as well. Resume downloads remain prominent on Home, About and
 Contact. `experience.html` was deliberately preserved in the repository, with
 its navigation updated to match the four-item site menu, so the page can be
 restored easily if Nikoline wants to rethink or republish it later.
@@ -526,10 +526,16 @@ the publication name now leads each entry directly. A bright purple
 `#B500FF` outer-border color was also previewed immediately beforehand and
 rejected; the approved black section borders remain unchanged.
 
-### 2026-08-13 — Contact résumé block simplified
-Removed the redundant "Access: Résumé" eyebrow and the dated "Updated 2026"
-meta line from the Contact page's résumé block. It now leads directly with
-"Full Career Résumé," followed by "PDF Download" and the download button.
+### 2026-08-13 — Contact resume block simplified
+Removed the redundant "Access: Resume" eyebrow and the dated "Updated 2026"
+meta line from the Contact page's resume block. It now leads directly with
+"Full Career Resume," followed by "PDF Download" and the download button.
+
+### 2026-08-13 — Resume accents removed site-wide
+Standardized all visible uses of "resume" to the unaccented spelling across
+Home, About, Contact and the preserved Experience page. Documentation follows
+the same convention. The existing PDF filename remains unchanged so its links
+continue to work.
 
 ## Gaps in this record
 

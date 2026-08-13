@@ -11,10 +11,10 @@ Live at [nikoline.com](https://nikoline.com), hosted on GitHub Pages.
 index.html        Home
 about.html        About
 experience.html   Career timeline, skills, education
-contact.html      Contact + résumé download
+contact.html      Contact + resume download
 css/style.css     Design system (colors, type, components)
 js/main.js        Mobile nav + scroll reveal
-assets/           Résumé PDF
+assets/           Resume PDF
 ```
 
 ## Making changes
