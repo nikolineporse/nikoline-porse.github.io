@@ -519,6 +519,13 @@ center while remaining legible at bullet size; it lives at
 in the homepage "Currently" entries and Work's "What I've Placed" entries.
 Other lists keep their normal markers. All active ornament is black for now.
 
+### 2026-08-13 — Press placement labels removed
+Removed the repeated "Press Placement" category label above all four entries in
+"What I've Placed." The section heading already establishes that context, so
+the publication name now leads each entry directly. A bright purple
+`#B500FF` outer-border color was also previewed immediately beforehand and
+rejected; the approved black section borders remain unchanged.
+
 ## Gaps in this record
 
 This journal was authored retroactively, reconstructed from one long
