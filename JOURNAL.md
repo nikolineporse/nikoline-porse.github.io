@@ -555,6 +555,11 @@ Centered the Full Career Resume heading, PDF Download label and download button
 within their desktop grid column. The rule begins above the existing 720px
 mobile breakpoint, so the iOS/mobile placement remains exactly as it was.
 
+### 2026-08-13 — Contact introduction rewritten
+Replaced the formal New York availability line with warmer, more confident
+language that echoes the personality of the About page while retaining the
+same focus on public relations, social strategy and events.
+
 ## Gaps in this record
 
 This journal was authored retroactively, reconstructed from one long
