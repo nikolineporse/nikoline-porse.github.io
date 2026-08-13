@@ -598,6 +598,11 @@ portrait until they naturally clear it, without a forced transition or gap. The
 desktop portrait was then enlarged slightly for stronger presence; mobile keeps
 its existing restrained size.
 
+### 2026-08-13 — Croatian name wording clarified
+Rephrased the opening About anecdote to say directly that Nikoline learned the
+name is Croatian too during her 2018 trip, replacing the more awkward phrasing
+that the name simply "exists there."
+
 ## Gaps in this record
 
 This journal was authored retroactively, reconstructed from one long
