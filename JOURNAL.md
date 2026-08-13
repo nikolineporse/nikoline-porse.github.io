@@ -487,6 +487,16 @@ vintage/sustainable shopping. A previewed draft briefly used the word "dansk"
 in the opening; Nikoline approved the rewrite after asking for that word to be
 removed.
 
+### 2026-08-13 — Experience removed from the visible site journey
+Removed Experience from the shared navigation because the page largely repeated
+the downloadable résumé without adding the personality of About or the proof of
+Work. The homepage's primary button now says "View My Work," its career-timeline
+link now points to Work, and About's former "View Full Experience" button now
+points to Work as well. Résumé downloads remain prominent on Home, About and
+Contact. `experience.html` was deliberately preserved in the repository, with
+its navigation updated to match the four-item site menu, so the page can be
+restored easily if Nikoline wants to rethink or republish it later.
+
 ## Gaps in this record
 
 This journal was authored retroactively, reconstructed from one long
