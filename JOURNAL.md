@@ -622,6 +622,17 @@ Replaced the detailed list of individual Assouline events with a concise summary
 of limited-edition publication launches, celebrity signings and cultural events.
 The About page now conveys range while leaving the Work page to show specifics.
 
+### 2026-08-13 — Achille Salvagni launch added to Work
+Added "An Evening with Achille Salvagni" to Where I've Been with Nikoline's
+supplied event photo. The entry describes the May 13, 2026 Assouline monograph
+launch at 817 Madison Avenue and focuses on her role as an on-site Assouline
+ambassador: welcoming and educating guests, sharing details about the release
+and answering questions throughout the reception. Added the comma after
+"gallerists" in the attendee list for clarity. Refreshed the Work page's
+script cache marker so the new event appears immediately for returning visitors.
+The Where I've Been gallery now sorts all event records newest to oldest using
+dedicated sortable dates, independent of how each date is presented to visitors.
+
 ## Gaps in this record
 
 This journal was authored retroactively, reconstructed from one long

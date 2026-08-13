@@ -16,11 +16,28 @@ if (navToggle && primaryNav) {
 // grid tile, matching the rest of the site's press-credential look.
 const WORK_EVENTS = [
   {
+    id: 'achille-salvagni-launch',
+    access: 'Publication Launch',
+    role: 'An Evening with Achille Salvagni',
+    org: 'Assouline · 817 Madison Avenue',
+    dateDisplay: 'May 13, 2026',
+    sortDate: '2026-05-13',
+    description: [
+      "Represented Assouline throughout an intimate cocktail reception celebrating the launch of Achille Salvagni, a new monograph dedicated to the Rome-based designer's blend of ancient craftsmanship and modern imagination",
+      'Welcomed collectors, designers, gallerists, and tastemakers, shared memorable details about the publication and served as an on-site resource for guest questions',
+      'Helped guests connect with the story behind the release and the cultural world surrounding Salvagni’s work'
+    ],
+    images: [
+      { src: 'assets/work/achille-salvagni-launch-01.jpg', alt: 'Copies of the Assouline monograph Achille Salvagni displayed on a round wooden table beneath a sculptural pendant light at the 817 Madison Avenue launch reception' }
+    ]
+  },
+  {
     id: 'cosmic-desert-party-celsius',
     access: 'Event Activation',
     role: 'Cosmic Desert Party — Celsius',
     org: 'Coachella · via CLD PR',
     dateDisplay: 'April 12, 2024',
+    sortDate: '2024-04-12',
     description: ['Managed press logistics and tastemaker outreach for the activation'],
     images: [
       { src: 'assets/work/cosmic-desert-party-celsius-01.jpg', alt: 'Silver, oxblood and mauve sphere sculptures reflected in a still lake at dusk, palm trees and mountains behind, at the Cosmic Desert Party — Celsius activation' }
@@ -32,6 +49,7 @@ const WORK_EVENTS = [
     role: 'NYFW Gifting Suites',
     org: 'via CLD PR',
     dateDisplay: 'September 2024',
+    sortDate: '2024-09-15',
     description: ['Coordinated celebrity seeding and press logistics across several gifting suites during New York Fashion Week'],
     images: [
       { src: 'assets/work/nyfw-gifting-suites-01.jpg', alt: 'Dozens of canvas CLD PR "NYFW September 2024" tote bags piled up, with cardboard signs marking VIP and press gifting sections' }
@@ -43,6 +61,7 @@ const WORK_EVENTS = [
     role: 'Roger Federer — Limited-Edition Publication',
     org: 'Assouline',
     dateDisplay: 'September 4, 2024',
+    sortDate: '2024-09-04',
     description: ['Partnered with in-house PR and events teams to plan the launch'],
     images: [
       { src: 'assets/work/roger-federer-limited-edition-publication-01.jpg', alt: 'Roger Federer seated at a signing table, pen in hand, surrounded by stacks of his limited-edition Assouline publication displayed against a red accent wall' }
@@ -54,6 +73,7 @@ const WORK_EVENTS = [
     role: 'Point of View Beauty Pop-Up',
     org: 'Point of View Beauty',
     dateDisplay: 'July 25–26, 2025',
+    sortDate: '2025-07-25',
     description: [
       "Assisted the Point of View Beauty team with brand storytelling and on-site education for the brand's first-ever pop-up, checking out customers interested in purchasing product",
       'Supported event production — helping with setup and breakdown, and mapping the smartest flow of foot traffic through the space',
@@ -69,6 +89,7 @@ const WORK_EVENTS = [
     role: 'Derrick Rose — Book Signing',
     org: 'Assouline',
     dateDisplay: 'February 14, 2026',
+    sortDate: '2026-02-14',
     description: ['Partnered with in-house PR and events teams to plan the signing'],
     images: [
       { src: 'assets/work/derrick-rose-book-signing-01.jpg', alt: 'Derrick Rose signing copies of his book "The Poohprint" at Assouline, flanked by two colleagues holding bouquets of red roses, with a red accent wall and stacked book display behind' }
@@ -110,8 +131,9 @@ function renderWorkEvents() {
   const container = document.getElementById('workEvents');
   if (!container) return; // no-op on every page except work.html
 
-  const withPhotos = WORK_EVENTS.filter(e => e.images.length > 0);
-  const withoutPhotos = WORK_EVENTS.filter(e => e.images.length === 0);
+  const newestFirst = (a, b) => b.sortDate.localeCompare(a.sortDate);
+  const withPhotos = WORK_EVENTS.filter(e => e.images.length > 0).sort(newestFirst);
+  const withoutPhotos = WORK_EVENTS.filter(e => e.images.length === 0).sort(newestFirst);
 
   let html = '';
   if (withPhotos.length) {
