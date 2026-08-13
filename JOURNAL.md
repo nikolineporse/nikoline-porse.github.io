@@ -603,6 +603,11 @@ Rephrased the opening About anecdote to say directly that Nikoline learned the
 name is Croatian too during her 2018 trip, replacing the more awkward phrasing
 that the name simply "exists there."
 
+### 2026-08-13 — Early New York roles distinguished
+Reworded the About narrative so Nikoline's brief personal-assistant role and
+CLD PR internship are clearly presented as two separate jobs that she held at
+the same time, rather than a single blended position.
+
 ## Gaps in this record
 
 This journal was authored retroactively, reconstructed from one long
