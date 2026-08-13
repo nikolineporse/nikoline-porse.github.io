@@ -550,6 +550,7 @@ nav.masthead-nav a[aria-current="page"] {
 
 @media (max-width: 720px) {
   .contact-grid { grid-template-columns: 1fr; }
+  .contact-resume { order: -1; }
 }
 
 .contact-list {

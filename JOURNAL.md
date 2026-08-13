@@ -560,6 +560,13 @@ Replaced the formal New York availability line with warmer, more confident
 language that echoes the personality of the About page while retaining the
 same focus on public relations, social strategy and events.
 
+### 2026-08-13 — Mobile resume invitation moved first
+On screens at or below the existing 720px mobile breakpoint, moved the resume
+download block above Email, LinkedIn and Instagram without changing its desktop
+position. Replaced the stiff "Full Career Resume" heading with the direct
+label "RESUME:" and removed the redundant "PDF Download" line above the existing
+"Download PDF" button.
+
 ## Gaps in this record
 
 This journal was authored retroactively, reconstructed from one long
