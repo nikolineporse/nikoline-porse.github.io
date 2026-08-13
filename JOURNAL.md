@@ -537,6 +537,12 @@ Home, About, Contact and the preserved Experience page. Documentation follows
 the same convention. The existing PDF filename remains unchanged so its links
 continue to work.
 
+### 2026-08-13 — Pantone-inspired pinstripe palette
+Changed the shared vertical pinstripe background from green and teal to the
+web approximations of Pantone 19-2047 TCX Sangria (`#982551`) and Pantone
+18-4048 TCX Nebulas Blue (`#2E62A3`). The existing 55% white overlay remains
+in place, keeping the saturated pairing soft behind the white content panels.
+
 ## Gaps in this record
 
 This journal was authored retroactively, reconstructed from one long
@@ -558,7 +564,7 @@ the fact from git history alone (reverted work often leaves no trace in
 
 ## Current state (as of 2026-08-13)
 
-- **Background:** green/teal vertical pinstripe
+- **Background:** Sangria/Nebulas Blue vertical pinstripe
   (`--pattern-stripe-a` / `--pattern-stripe-b`), faded with a 55% white
   overlay, visible in the space between white content boxes.
 - **Content boxes:** every major block (masthead, hero, each section,
@@ -571,7 +577,7 @@ the fact from git history alone (reverted work often leaves no trace in
 - **Fonts:** Beth Ellen (script wordmark + section headings) + Spectral
   (everything else, weight 300 default).
 - **Colors:** pure black for all text, ink and active ornament; white content
-  surfaces; green/teal background pattern. The mauve token and archived lace
+  surfaces; Sangria/Nebulas Blue background pattern. The mauve token and archived lace
   asset remain available but mauve is not currently used in the interface.
 - **Nav:** Home / About / Work / Contact, centered under a centered masthead
   name, no tagline. `experience.html` is preserved but not visibly linked.

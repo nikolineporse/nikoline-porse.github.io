@@ -18,8 +18,8 @@
   --slate: #000000;      /* secondary text — black */
   --slate-light: #DCD5C6; /* hairline rule color on paper */
   --paper-shadow: rgba(32, 29, 27, 0.08);
-  --pattern-stripe-a: #C2E8B1; /* green vertical pinstripe */
-  --pattern-stripe-b: #73B0BB; /* teal vertical pinstripe */
+  --pattern-stripe-a: #982551; /* Pantone 19-2047 TCX Sangria */
+  --pattern-stripe-b: #2E62A3; /* Pantone 18-4048 TCX Nebulas Blue */
 
   /* -- Type -- */
   --font-display: 'Spectral', 'Georgia', serif;
