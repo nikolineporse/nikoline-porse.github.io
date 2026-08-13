@@ -642,6 +642,19 @@ Gallery images are capped relative to the browser height and use a full-image
 fit, so portrait and landscape media can be viewed without scrolling through
 an oversized crop.
 
+### 2026-08-13 — Icy blue surface-color demo
+Initially previewed icy blue `#D8F9FA` in place of the shared white surface,
+then softened it to a more muted mint-blue `#DDEFEA`. The revised color keeps
+the site visibly colorful while relating more naturally to Avocado Oil and the
+vintage-inspired palette. The shared token updates the masthead, content panels,
+footer, modal, light buttons and other formerly white interface areas.
+
+### 2026-08-13 — Avocado Oil stripe demo
+Replaced the Nebulas Blue half of the pinstripe background with the web
+approximation of Pantone 16-0640 TCX Avocado Oil (`#9B892F`). Sangria remains
+the alternating stripe, paired with mint-blue content surfaces and Sun-Dried
+Tomato frames and CTA accents.
+
 ## Gaps in this record
 
 This journal was authored retroactively, reconstructed from one long
@@ -663,11 +676,11 @@ the fact from git history alone (reverted work often leaves no trace in
 
 ## Current state (as of 2026-08-13)
 
-- **Background:** Sangria/Nebulas Blue vertical pinstripe
+- **Background:** Sangria/Avocado Oil vertical pinstripe
   (`--pattern-stripe-a` / `--pattern-stripe-b`), faded with a 55% white
   overlay, visible in the space between white content boxes.
 - **Content boxes:** every major block (masthead, hero, each section,
-  footer) has a plain white background; hero, section and footer frames use
+  footer) has a soft mint-blue `#DDEFEA` background; hero, section and footer frames use
   `2px solid #752329` while CTA buttons use the same accent,
   no rounded corners, no drop shadow.
 - **Credential entries:** unboxed and transparent, with no inner border,
@@ -676,8 +689,8 @@ the fact from git history alone (reverted work often leaves no trace in
   black star is the list marker in Currently and What I've Placed only.
 - **Fonts:** Beth Ellen (script wordmark + section headings) + Spectral
   (everything else, weight 300 default).
-- **Colors:** pure black for all text, ink and active ornament; white content
-  surfaces; Sangria/Nebulas Blue background pattern. The mauve token and archived lace
+- **Colors:** pure black for all text, ink and active ornament; mint-blue content
+  surfaces; Sangria/Avocado Oil background pattern. The mauve token and archived lace
   asset remain available but mauve is not currently used in the interface.
 - **Nav:** Home / About / Work / Contact, centered under a centered masthead
   name, no tagline. `experience.html` is preserved but not visibly linked.
