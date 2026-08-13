@@ -320,6 +320,25 @@ nav.masthead-nav a[aria-current="page"] {
   }
 }
 
+.about-star-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin: 30px 0 22px;
+}
+
+.about-star-divider img {
+  display: block;
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.about-cta-row {
+  justify-content: center;
+}
+
 /* ---------- Press credential cards (signature element) ---------- */
 
 .credential {

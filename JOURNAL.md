@@ -608,6 +608,11 @@ Reworded the About narrative so Nikoline's brief personal-assistant role and
 CLD PR internship are clearly presented as two separate jobs that she held at
 the same time, rather than a single blended position.
 
+### 2026-08-13 — About closing flourish centered
+Centered the View My Work and Download Resume buttons at the end of the About
+page. Added three small instances of Nikoline's hand-drawn star between the
+final paragraph and the buttons as a restrained closing signature.
+
 ## Gaps in this record
 
 This journal was authored retroactively, reconstructed from one long
