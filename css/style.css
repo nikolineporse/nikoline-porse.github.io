@@ -750,6 +750,101 @@ footer.site-footer p {
   margin: 0;
 }
 
+/* ---------- Branch-only palette lab ---------- */
+
+.palette-lab {
+  position: fixed;
+  z-index: 1000;
+  left: 14px;
+  bottom: 14px;
+  width: min(250px, calc(100vw - 28px));
+  color: #111;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+  line-height: 1.25;
+  filter: drop-shadow(0 5px 16px rgba(0, 0, 0, 0.2));
+}
+
+.palette-lab details {
+  border: 1px solid #111;
+  background: #fff;
+}
+
+.palette-lab summary {
+  padding: 8px 10px;
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.palette-lab-body {
+  padding: 10px;
+}
+
+.palette-lab-hint {
+  margin: 0 0 8px;
+  color: #444;
+}
+
+.palette-lab-fields {
+  display: grid;
+  gap: 6px;
+}
+
+.palette-lab-fields label {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  align-items: center;
+  gap: 7px;
+}
+
+.palette-lab-fields input {
+  width: 100%;
+  border: 1px solid #777;
+  border-left: 14px solid var(--palette-swatch, #fff);
+  border-radius: 0;
+  background: #fff;
+  color: #111;
+  font: inherit;
+  padding: 5px 6px;
+  text-transform: uppercase;
+}
+
+.palette-lab-fields input[aria-invalid="true"] {
+  border-color: #c00;
+}
+
+.palette-lab-actions {
+  display: flex;
+  gap: 6px;
+  margin-top: 9px;
+}
+
+.palette-lab button {
+  border: 1px solid #111;
+  border-radius: 0;
+  background: #fff;
+  color: #111;
+  cursor: pointer;
+  font: inherit;
+  padding: 5px 8px;
+}
+
+.palette-lab button:hover,
+.palette-lab button:focus-visible {
+  background: #111;
+  color: #fff;
+}
+
+.palette-lab-status {
+  min-height: 1.25em;
+  margin: 7px 0 0;
+  color: #444;
+}
+
 /* ---------- Reveal on scroll ---------- */
 
 .reveal {

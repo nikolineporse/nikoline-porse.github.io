@@ -89,6 +89,42 @@
   </div>
 </footer>
 
+<aside class="palette-lab" aria-label="Experimental color palette controls">
+  <details open>
+    <summary>Palette lab</summary>
+    <div class="palette-lab-body">
+      <p class="palette-lab-hint">Paste one hex per field, or paste five hex codes into any field.</p>
+      <div class="palette-lab-fields">
+        <label>
+          <span>Background</span>
+          <input type="text" inputmode="text" value="#FFFFFF" data-palette-token="paper" aria-label="Background hex color">
+        </label>
+        <label>
+          <span>Text</span>
+          <input type="text" inputmode="text" value="#000000" data-palette-token="ink" aria-label="Text hex color">
+        </label>
+        <label>
+          <span>Frame</span>
+          <input type="text" inputmode="text" value="#752329" data-palette-token="content-frame" aria-label="Frame hex color">
+        </label>
+        <label>
+          <span>Stripe A</span>
+          <input type="text" inputmode="text" value="#752329" data-palette-token="pattern-stripe-a" aria-label="First stripe hex color">
+        </label>
+        <label>
+          <span>Stripe B</span>
+          <input type="text" inputmode="text" value="#2E62A3" data-palette-token="pattern-stripe-b" aria-label="Second stripe hex color">
+        </label>
+      </div>
+      <div class="palette-lab-actions">
+        <button type="button" data-palette-copy>Copy CSS</button>
+        <button type="button" data-palette-reset>Reset</button>
+      </div>
+      <p class="palette-lab-status" data-palette-status aria-live="polite"></p>
+    </div>
+  </details>
+</aside>
+
 <script src="js/main.js"></script>
 </body>
 </html>

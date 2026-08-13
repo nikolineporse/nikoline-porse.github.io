@@ -1,4 +1,139 @@
 // Mobile nav toggle
+const PALETTE_STORAGE_KEY = 'nikoline-color-experiment';
+const PALETTE_DEFAULTS = {
+  paper: '#FFFFFF',
+  ink: '#000000',
+  'content-frame': '#752329',
+  'pattern-stripe-a': '#752329',
+  'pattern-stripe-b': '#2E62A3'
+};
+
+function normalizeHex(value) {
+  const match = String(value).trim().match(/^#?([0-9a-f]{3}|[0-9a-f]{6})$/i);
+  if (!match) return null;
+  const hex = match[1].length === 3
+    ? match[1].split('').map(character => character + character).join('')
+    : match[1];
+  return `#${hex.toUpperCase()}`;
+}
+
+function applyPalette(palette) {
+  const root = document.documentElement;
+  Object.entries(palette).forEach(([token, color]) => {
+    root.style.setProperty(`--${token}`, color);
+  });
+
+  // The current design aliases these semantic accents to the text color.
+  ['oxblood', 'oxblood-deep', 'brass', 'slate'].forEach(token => {
+    root.style.setProperty(`--${token}`, palette.ink);
+  });
+}
+
+function storedPalette() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(PALETTE_STORAGE_KEY));
+    if (!saved) return null;
+    const palette = { ...PALETTE_DEFAULTS, ...saved };
+    return Object.values(palette).every(normalizeHex) ? palette : null;
+  } catch {
+    return null;
+  }
+}
+
+const initialPalette = storedPalette();
+if (initialPalette) applyPalette(initialPalette);
+
+function initPaletteLab() {
+  const lab = document.querySelector('.palette-lab');
+  if (!lab) return;
+
+  const inputs = [...lab.querySelectorAll('[data-palette-token]')];
+  const status = lab.querySelector('[data-palette-status]');
+  let palette = initialPalette || { ...PALETTE_DEFAULTS };
+
+  function showStatus(message) {
+    status.textContent = message;
+  }
+
+  function syncInputs() {
+    inputs.forEach(input => {
+      const color = palette[input.dataset.paletteToken];
+      input.value = color;
+      input.style.setProperty('--palette-swatch', color);
+      input.removeAttribute('aria-invalid');
+    });
+  }
+
+  function saveAndApply() {
+    try {
+      localStorage.setItem(PALETTE_STORAGE_KEY, JSON.stringify(palette));
+    } catch {
+      // Preview still works when storage is unavailable (for example, file://).
+    }
+    applyPalette(palette);
+    syncInputs();
+  }
+
+  inputs.forEach(input => {
+    input.addEventListener('input', () => {
+      const color = normalizeHex(input.value);
+      input.toggleAttribute('aria-invalid', !color);
+      if (!color) return;
+      palette[input.dataset.paletteToken] = color;
+      saveAndApply();
+      showStatus('Preview saved locally.');
+    });
+
+    input.addEventListener('paste', event => {
+      const pasted = event.clipboardData?.getData('text') || '';
+      const colors = pasted.match(/#?[0-9a-f]{6}\b|#?[0-9a-f]{3}\b/gi)?.map(normalizeHex);
+      if (!colors || colors.length < inputs.length) return;
+      event.preventDefault();
+      inputs.forEach((field, index) => {
+        palette[field.dataset.paletteToken] = colors[index];
+      });
+      saveAndApply();
+      showStatus('Five-color palette applied.');
+    });
+  });
+
+  lab.querySelector('[data-palette-reset]').addEventListener('click', () => {
+    palette = { ...PALETTE_DEFAULTS };
+    localStorage.removeItem(PALETTE_STORAGE_KEY);
+    applyPalette(palette);
+    syncInputs();
+    showStatus('Original branch colors restored.');
+  });
+
+  lab.querySelector('[data-palette-copy]').addEventListener('click', async () => {
+    const reproduciblePalette = {
+      paper: palette.paper,
+      ink: palette.ink,
+      oxblood: palette.ink,
+      'oxblood-deep': palette.ink,
+      brass: palette.ink,
+      slate: palette.ink,
+      'content-frame': palette['content-frame'],
+      'pattern-stripe-a': palette['pattern-stripe-a'],
+      'pattern-stripe-b': palette['pattern-stripe-b']
+    };
+    const css = `:root {\n${Object.entries(reproduciblePalette)
+      .map(([token, color]) => `  --${token}: ${color};`)
+      .join('\n')}\n}`;
+    try {
+      await navigator.clipboard.writeText(css);
+      showStatus('CSS copied.');
+    } catch {
+      showStatus('Clipboard unavailable; use the fields above.');
+    }
+  });
+
+  syncInputs();
+  applyPalette(palette);
+}
+
+initPaletteLab();
+
 const navToggle = document.getElementById('navToggle');
 const primaryNav = document.getElementById('primaryNav');
 
