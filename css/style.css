@@ -540,17 +540,62 @@ nav.masthead-nav a[aria-current="page"] {
 }
 
 .event-modal-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 10px;
+  position: relative;
   margin-top: 18px;
 }
 
 .event-modal-gallery img {
   width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
+  height: min(52vh, 520px);
+  object-fit: contain;
   display: block;
+  background: var(--paper);
+}
+
+.event-gallery-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background: rgba(255, 255, 255, 0.88);
+  color: var(--ink);
+  font-family: var(--font-script);
+  font-size: 2.4rem;
+  line-height: 1;
+  width: 52px;
+  height: 52px;
+  cursor: pointer;
+}
+
+.event-gallery-prev { left: 12px; }
+.event-gallery-next { right: 12px; }
+
+.event-gallery-arrow:hover,
+.event-gallery-arrow:focus-visible {
+  background: var(--paper);
+}
+
+.event-gallery-count {
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  margin: 0;
+  padding: 3px 8px;
+  background: rgba(255, 255, 255, 0.88);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 640px) {
+  .event-modal-gallery img {
+    height: min(44vh, 380px);
+  }
+  .event-gallery-arrow {
+    width: 44px;
+    height: 44px;
+    font-size: 2rem;
+  }
 }
 
 /* ---------- Skills ---------- */

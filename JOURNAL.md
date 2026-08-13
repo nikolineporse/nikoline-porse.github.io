@@ -633,6 +633,15 @@ script cache marker so the new event appears immediately for returning visitors.
 The Where I've Been gallery now sorts all event records newest to oldest using
 dedicated sortable dates, independent of how each date is presented to visitors.
 
+### 2026-08-13 — Achille Salvagni carousel added
+Added two more supplied photos to the Achille Salvagni event. Multi-photo event
+details now show one image at a time with original hand-drawn-style arrow
+controls, a current-photo count, keyboard left/right navigation, and touch swipe
+support on mobile. Single-photo events continue to display without controls.
+Gallery images are capped relative to the browser height and use a full-image
+fit, so portrait and landscape media can be viewed without scrolling through
+an oversized crop.
+
 ## Gaps in this record
 
 This journal was authored retroactively, reconstructed from one long

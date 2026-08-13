@@ -28,7 +28,9 @@ const WORK_EVENTS = [
       'Helped guests connect with the story behind the release and the cultural world surrounding Salvagni’s work'
     ],
     images: [
-      { src: 'assets/work/achille-salvagni-launch-01.jpg', alt: 'Copies of the Assouline monograph Achille Salvagni displayed on a round wooden table beneath a sculptural pendant light at the 817 Madison Avenue launch reception' }
+      { src: 'assets/work/achille-salvagni-launch-01.jpg', alt: 'Copies of the Assouline monograph Achille Salvagni displayed on a round wooden table beneath a sculptural pendant light at the 817 Madison Avenue launch reception' },
+      { src: 'assets/work/achille-salvagni-launch-02.jpg', alt: 'Guests gathered beneath an installation of suspended Achille Salvagni books during the Assouline launch reception at 817 Madison Avenue' },
+      { src: 'assets/work/achille-salvagni-launch-03.jpg', alt: 'Achille Salvagni books displayed among furniture, lighting, and decorative objects in a warm red room at Assouline 817 Madison Avenue' }
     ]
   },
   {
@@ -151,11 +153,54 @@ function renderWorkEvents() {
 }
 
 let lastFocusedEl = null;
+let activeGalleryEvent = null;
+let activeGalleryIndex = 0;
+let galleryTouchStartX = null;
+
+function galleryMarkup(event) {
+  const image = event.images[activeGalleryIndex];
+  const controls = event.images.length > 1 ? `
+    <button type="button" class="event-gallery-arrow event-gallery-prev" aria-label="Previous photo">←</button>
+    <button type="button" class="event-gallery-arrow event-gallery-next" aria-label="Next photo">→</button>
+    <p class="event-gallery-count" aria-live="polite">${activeGalleryIndex + 1} / ${event.images.length}</p>
+  ` : '';
+  return `
+    <div class="event-modal-gallery${event.images.length > 1 ? ' is-carousel' : ''}">
+      <img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt)}">
+      ${controls}
+    </div>
+  `;
+}
+
+function showGalleryImage(index) {
+  if (!activeGalleryEvent) return;
+  const total = activeGalleryEvent.images.length;
+  activeGalleryIndex = (index + total) % total;
+  const gallery = document.querySelector('.event-modal-gallery');
+  if (!gallery) return;
+  gallery.outerHTML = galleryMarkup(activeGalleryEvent);
+  bindGalleryControls();
+}
+
+function bindGalleryControls() {
+  const gallery = document.querySelector('.event-modal-gallery');
+  if (!gallery || !activeGalleryEvent || activeGalleryEvent.images.length < 2) return;
+  gallery.querySelector('.event-gallery-prev')?.addEventListener('click', () => showGalleryImage(activeGalleryIndex - 1));
+  gallery.querySelector('.event-gallery-next')?.addEventListener('click', () => showGalleryImage(activeGalleryIndex + 1));
+  gallery.addEventListener('touchstart', (event) => {
+    galleryTouchStartX = event.touches[0]?.clientX ?? null;
+  }, { passive: true });
+  gallery.addEventListener('touchend', (event) => {
+    if (galleryTouchStartX === null) return;
+    const endX = event.changedTouches[0]?.clientX ?? galleryTouchStartX;
+    const distance = endX - galleryTouchStartX;
+    galleryTouchStartX = null;
+    if (Math.abs(distance) < 40) return;
+    showGalleryImage(activeGalleryIndex + (distance < 0 ? 1 : -1));
+  }, { passive: true });
+}
 
 function renderModalContent(event) {
-  const gallery = event.images.map(img =>
-    `<img src="${escapeHtml(img.src)}" alt="${escapeHtml(img.alt)}">`
-  ).join('');
   const descItems = event.description.map(d => `<li>${escapeHtml(d)}</li>`).join('');
   const dateMarkup = event.dateDisplay
     ? `<p class="credential-meta"><span>${escapeHtml(event.dateDisplay)}</span></p>`
@@ -166,7 +211,7 @@ function renderModalContent(event) {
     <p class="credential-org">${escapeHtml(event.org)}</p>
     ${dateMarkup}
     <ul>${descItems}</ul>
-    <div class="event-modal-gallery">${gallery}</div>
+    ${galleryMarkup(event)}
   `;
 }
 
@@ -177,8 +222,11 @@ function openEventModal(id) {
   const body = document.getElementById('eventModalBody');
   const dialog = document.getElementById('eventModal');
   if (!body || !dialog) return;
+  activeGalleryEvent = event;
+  activeGalleryIndex = 0;
   body.innerHTML = renderModalContent(event);
   dialog.showModal();
+  bindGalleryControls();
   document.getElementById('eventModalClose')?.focus();
 }
 
@@ -194,7 +242,14 @@ function closeEventModal() {
     if (e.target === dialog) closeEventModal();
   });
   dialog.addEventListener('close', () => {
+    activeGalleryEvent = null;
+    activeGalleryIndex = 0;
     lastFocusedEl?.focus();
+  });
+  dialog.addEventListener('keydown', (event) => {
+    if (!activeGalleryEvent || activeGalleryEvent.images.length < 2) return;
+    if (event.key === 'ArrowLeft') showGalleryImage(activeGalleryIndex - 1);
+    if (event.key === 'ArrowRight') showGalleryImage(activeGalleryIndex + 1);
   });
 })();
 
