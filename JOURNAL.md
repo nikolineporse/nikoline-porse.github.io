@@ -526,6 +526,11 @@ the publication name now leads each entry directly. A bright purple
 `#B500FF` outer-border color was also previewed immediately beforehand and
 rejected; the approved black section borders remain unchanged.
 
+### 2026-08-13 — Contact résumé block simplified
+Removed the redundant "Access: Résumé" eyebrow and the dated "Updated 2026"
+meta line from the Contact page's résumé block. It now leads directly with
+"Full Career Résumé," followed by "PDF Download" and the download button.
+
 ## Gaps in this record
 
 This journal was authored retroactively, reconstructed from one long
