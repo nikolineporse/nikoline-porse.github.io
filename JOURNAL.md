@@ -550,6 +550,11 @@ color now accents the outer borders around major white content panels and the
 CTA button boxes, including filled primary buttons and outlined secondary
 buttons. Other controls and modal borders remain black.
 
+### 2026-08-13 — Desktop Contact resume alignment
+Centered the Full Career Resume heading, PDF Download label and download button
+within their desktop grid column. The rule begins above the existing 720px
+mobile breakpoint, so the iOS/mobile placement remains exactly as it was.
+
 ## Gaps in this record
 
 This journal was authored retroactively, reconstructed from one long
