@@ -18,6 +18,7 @@
   --slate: #000000;      /* secondary text — black */
   --slate-light: #DCD5C6; /* hairline rule color on paper */
   --paper-shadow: rgba(32, 29, 27, 0.08);
+  --content-frame: #752329; /* Pantone 19-1531 TCX Sun-Dried Tomato */
   --pattern-stripe-a: #982551; /* Pantone 19-2047 TCX Sangria */
   --pattern-stripe-b: #2E62A3; /* Pantone 18-4048 TCX Nebulas Blue */
 
@@ -95,7 +96,7 @@ main .section {
 main .hero .wrap,
 main .section .wrap {
   background: var(--paper);
-  border: 2px solid var(--ink);
+  border: 2px solid var(--content-frame);
   padding: 34px 36px;
 }
 
@@ -221,7 +222,7 @@ nav.masthead-nav a[aria-current="page"] {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   padding: 13px 22px;
-  border: 2px solid var(--ink);
+  border: 2px solid var(--content-frame);
   background: var(--paper);
   color: var(--ink);
   transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
@@ -229,17 +230,17 @@ nav.masthead-nav a[aria-current="page"] {
 .btn:hover { text-decoration: none; }
 
 .btn-primary {
-  background: var(--ink);
+  background: var(--content-frame);
   color: var(--paper);
 }
 .btn-primary:hover {
-  background: var(--oxblood);
-  border-color: var(--oxblood);
+  background: var(--ink);
+  border-color: var(--ink);
 }
 
 .btn-ghost:hover {
-  border-color: var(--oxblood);
-  color: var(--oxblood);
+  border-color: var(--content-frame);
+  color: var(--content-frame);
 }
 
 /* ---------- Section ---------- */
@@ -583,7 +584,7 @@ footer.site-footer {
 
 footer.site-footer .wrap {
   background: var(--paper);
-  border: 2px solid var(--ink);
+  border: 2px solid var(--content-frame);
   padding: 26px 32px 24px;
 }
 

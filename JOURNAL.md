@@ -543,6 +543,13 @@ web approximations of Pantone 19-2047 TCX Sangria (`#982551`) and Pantone
 18-4048 TCX Nebulas Blue (`#2E62A3`). The existing 55% white overlay remains
 in place, keeping the saturated pairing soft behind the white content panels.
 
+### 2026-08-13 — Sun-Dried Tomato frame and CTA demo
+After first previewing bright green frames, replaced that experiment with the
+web approximation of Pantone 19-1531 TCX Sun-Dried Tomato (`#752329`). The
+color now accents the outer borders around major white content panels and the
+CTA button boxes, including filled primary buttons and outlined secondary
+buttons. Other controls and modal borders remain black.
+
 ## Gaps in this record
 
 This journal was authored retroactively, reconstructed from one long
@@ -568,7 +575,8 @@ the fact from git history alone (reverted work often leaves no trace in
   (`--pattern-stripe-a` / `--pattern-stripe-b`), faded with a 55% white
   overlay, visible in the space between white content boxes.
 - **Content boxes:** every major block (masthead, hero, each section,
-  footer) has a plain white background and a `2px solid black` border,
+  footer) has a plain white background; hero, section and footer frames use
+  `2px solid #752329` while CTA buttons use the same accent,
   no rounded corners, no drop shadow.
 - **Credential entries:** unboxed and transparent, with no inner border,
   rounded corners, shadow or mauve fill. Currently/Experience have no access
