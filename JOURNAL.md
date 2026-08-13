@@ -655,6 +655,13 @@ approximation of Pantone 16-0640 TCX Avocado Oil (`#9B892F`). Sangria remains
 the alternating stripe, paired with mint-blue content surfaces and Sun-Dried
 Tomato frames and CTA accents.
 
+### 2026-08-13 — Palette simplified to three colors
+After previewing and publishing the mint-blue, Sangria and Avocado Oil palette,
+returned the site to white surfaces and simplified the pinstripes to Sun-Dried
+Tomato (`#752329`) and Nebulas Blue (`#2E62A3`). Sun-Dried Tomato continues to
+frame the content panels and accent CTA buttons, keeping the active palette to
+white plus the two Pantone-inspired colors.
+
 ## Gaps in this record
 
 This journal was authored retroactively, reconstructed from one long
@@ -676,11 +683,11 @@ the fact from git history alone (reverted work often leaves no trace in
 
 ## Current state (as of 2026-08-13)
 
-- **Background:** Sangria/Avocado Oil vertical pinstripe
+- **Background:** Sun-Dried Tomato/Nebulas Blue vertical pinstripe
   (`--pattern-stripe-a` / `--pattern-stripe-b`), faded with a 55% white
   overlay, visible in the space between white content boxes.
 - **Content boxes:** every major block (masthead, hero, each section,
-  footer) has a soft mint-blue `#DDEFEA` background; hero, section and footer frames use
+  footer) has a white background; hero, section and footer frames use
   `2px solid #752329` while CTA buttons use the same accent,
   no rounded corners, no drop shadow.
 - **Credential entries:** unboxed and transparent, with no inner border,
@@ -689,8 +696,9 @@ the fact from git history alone (reverted work often leaves no trace in
   black star is the list marker in Currently and What I've Placed only.
 - **Fonts:** Beth Ellen (script wordmark + section headings) + Spectral
   (everything else, weight 300 default).
-- **Colors:** pure black for all text, ink and active ornament; mint-blue content
-  surfaces; Sangria/Avocado Oil background pattern. The mauve token and archived lace
+- **Colors:** pure black for all text and active ornament; white content
+  surfaces; Sun-Dried Tomato/Nebulas Blue background pattern with Sun-Dried
+  Tomato frames and CTAs. The mauve token and archived lace
   asset remain available but mauve is not currently used in the interface.
 - **Nav:** Home / About / Work / Contact, centered under a centered masthead
   name, no tagline. `experience.html` is preserved but not visibly linked.
