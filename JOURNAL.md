@@ -581,6 +581,23 @@ row and then a centered stack, aligned the final stacked label and button to the
 same left edge as the introductory paragraph, Email, LinkedIn and Instagram.
 The approved centered iOS layout remains unchanged.
 
+### 2026-08-13 — About portrait added
+Added Nikoline's supplied portrait beside the opening About paragraph in a
+restrained editorial two-column layout. The image keeps its full vertical
+proportions at a modest width and uses a thin Sun-Dried Tomato frame. On mobile,
+it moves above the introduction and centers so the text remains comfortable.
+
+### 2026-08-13 — About introduction tightened and signed
+Moved the Southern California paragraph into the portrait's adjoining text
+column, eliminating the empty space beneath the short opening paragraph. After
+previewing Nikoline's hand-drawn star as a small signature, removed it and
+shifted the portrait to the right. The opening copy now wraps naturally around
+the image in an editorial treatment rather than sitting in a rigid column. The
+full About narrative shares one continuous flow container so paragraphs hug the
+portrait until they naturally clear it, without a forced transition or gap. The
+desktop portrait was then enlarged slightly for stronger presence; mobile keeps
+its existing restrained size.
+
 ## Gaps in this record
 
 This journal was authored retroactively, reconstructed from one long

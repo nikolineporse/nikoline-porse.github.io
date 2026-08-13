@@ -121,7 +121,7 @@ main .section .wrap {
 
 .masthead-top {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   text-align: center;
   padding: 30px 0 18px;
@@ -278,6 +278,47 @@ nav.masthead-nav a[aria-current="page"] {
 }
 
 .lede + .lede { margin-top: 16px; }
+
+/* ---------- About portrait ---------- */
+
+.about-intro {
+  display: flow-root;
+  margin-bottom: 0;
+}
+
+.about-intro .lede {
+  max-width: none;
+}
+
+.about-intro .lede + .lede {
+  margin-top: 16px;
+}
+
+.about-portrait {
+  float: right;
+  width: min(270px, 32%);
+  margin: 0 0 18px 36px;
+  border: 2px solid var(--content-frame);
+  padding: 7px;
+  background: var(--paper);
+}
+
+.about-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 720px) {
+  .about-intro {
+    display: block;
+  }
+  .about-portrait {
+    float: none;
+    width: min(230px, 78vw);
+    margin: 0 auto 24px;
+  }
+}
 
 /* ---------- Press credential cards (signature element) ---------- */
 
