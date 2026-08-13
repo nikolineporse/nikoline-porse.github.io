@@ -613,6 +613,15 @@ Centered the View My Work and Download Resume buttons at the end of the About
 page. Added three small instances of Nikoline's hand-drawn star between the
 final paragraph and the buttons as a restrained closing signature.
 
+### 2026-08-13 — About role wording refined
+Removed "out front" from the CLD PR events sentence and updated the social
+content reference from "Stacy's PR Instagram" to "the SMC PR Instagram."
+
+### 2026-08-13 — Assouline event list streamlined
+Replaced the detailed list of individual Assouline events with a concise summary
+of limited-edition publication launches, celebrity signings and cultural events.
+The About page now conveys range while leaving the Work page to show specifics.
+
 ## Gaps in this record
 
 This journal was authored retroactively, reconstructed from one long
