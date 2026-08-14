@@ -87,7 +87,7 @@ const WORK_EVENTS = [
   },
   {
     id: 'derrick-rose-signing',
-    access: 'Author Signing',
+    access: 'Publication Launch & Book Signing',
     role: 'Derrick Rose: The Poohprint',
     org: 'Assouline',
     dateDisplay: 'February 14, 2026',
@@ -111,19 +111,12 @@ function escapeHtml(str) {
   }[c]));
 }
 
-function formatEventText(str) {
-  return escapeHtml(str).replaceAll(
-    'Derrick Rose: The Poohprint',
-    '<strong><em>Derrick Rose: The Poohprint</em></strong>'
-  );
-}
-
 function buildCredentialCard(event) {
-  const descItems = event.description.map(d => `<li>${formatEventText(d)}</li>`).join('');
+  const descItems = event.description.map(d => `<li>${escapeHtml(d)}</li>`).join('');
   return `
     <div class="credential reveal">
       <p class="credential-access">${escapeHtml(event.access)}</p>
-      <p class="credential-role">${formatEventText(event.role)}</p>
+      <p class="credential-role">${escapeHtml(event.role)}</p>
       <p class="credential-org">${escapeHtml(event.org)}</p>
       <ul>${descItems}</ul>
     </div>
@@ -136,7 +129,7 @@ function buildTile(event) {
     <li>
       <a href="${escapeHtml(cover.src)}" class="work-tile reveal" data-event-id="${escapeHtml(event.id)}">
         <img src="${escapeHtml(cover.src)}" alt="" loading="lazy">
-        <span class="work-tile-label">${formatEventText(event.role)}</span>
+        <span class="work-tile-label">${escapeHtml(event.role)}</span>
       </a>
     </li>
   `;
@@ -214,13 +207,13 @@ function bindGalleryControls() {
 }
 
 function renderModalContent(event) {
-  const descItems = event.description.map(d => `<li>${formatEventText(d)}</li>`).join('');
+  const descItems = event.description.map(d => `<li>${escapeHtml(d)}</li>`).join('');
   const dateMarkup = event.dateDisplay
     ? `<p class="credential-meta"><span>${escapeHtml(event.dateDisplay)}</span></p>`
     : '';
   return `
     <p class="credential-access">${escapeHtml(event.access)}</p>
-    <h3 id="eventModalTitle" class="credential-role">${formatEventText(event.role)}</h3>
+    <h3 id="eventModalTitle" class="credential-role">${escapeHtml(event.role)}</h3>
     <p class="credential-org">${escapeHtml(event.org)}</p>
     ${dateMarkup}
     <ul>${descItems}</ul>

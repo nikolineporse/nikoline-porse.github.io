@@ -687,8 +687,9 @@ the fact from git history alone (reverted work often leaves no trace in
 - Kept the existing signing photo as the cover image.
 - Reused the fitted gallery, arrow controls, keyboard navigation, and iOS swipe behavior established for the Achille Salvagni event.
 - Renamed the event “Derrick Rose: The Poohprint” and expanded the description to highlight event-flow management, guest education and direct support for Derrick Rose.
-- Styled the complete book title in bold italics wherever it appears in the event tile and details.
+- Returned the book title to the same regular styling as the other event titles after a bold-italic treatment felt too heavy.
 - Kept the event copy distinct: one bullet focuses on operations while another focuses on guest-facing book education.
+- Changed the event category from “Author Signing” to “Publication Launch & Book Signing.”
 
 ## Current state (as of 2026-08-13)
 
