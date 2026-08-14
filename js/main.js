@@ -54,12 +54,17 @@ const WORK_EVENTS = [
     id: 'nyfw-gifting-suites',
     access: 'Event Activation',
     role: 'NYFW Gifting Suites',
-    org: 'via CLD PR',
+    org: 'CLD PR',
     dateDisplay: 'September 2024',
     sortDate: '2024-09-15',
-    description: ['Coordinated celebrity seeding and press logistics across several gifting suites during New York Fashion Week'],
+    description: [
+      'Supported end-to-end production for CLD PR’s high-profile NYFW gifting suite, connecting tastemakers and VIP creators with emerging brand partners',
+      'Provided hands-on executive support to Devora Viictor as the luxury handbag designer debuted her brand at the event',
+      'Introduced the brand story to influencers and used real-time audience insight to strategically gift handbags to high-reach creators'
+    ],
     images: [
-      { src: 'assets/work/nyfw-gifting-suites-01.jpg', alt: 'Dozens of canvas CLD PR "NYFW September 2024" tote bags piled up, with cardboard signs marking VIP and press gifting sections' }
+      { src: 'assets/work/nyfw-gifting-suites-01.jpg', alt: 'Dozens of canvas CLD PR "NYFW September 2024" tote bags piled up, with cardboard signs marking VIP and press gifting sections' },
+      { src: 'assets/work/nyfw-gifting-suites-02.jpg', alt: 'Influencers, creators, and brand representatives gathered at CLD PR’s rooftop gifting suite during New York Fashion Week' }
     ]
   },
   {

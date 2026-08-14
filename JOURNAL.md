@@ -702,6 +702,11 @@ the fact from git history alone (reverted work often leaves no trace in
 - Renamed the event “Roger Federer Book Signing Event” and categorized it as a publication launch and book signing.
 - Expanded the description to highlight invitation-list collaboration, the rapid ticket sellout, guest check-in and flow, and support for Assouline’s events and PR teams.
 
+### 2026-08-13 — NYFW gifting suite expanded
+
+- Simplified the organization label to “CLD PR” and added a supplied rooftop event photo to the gallery.
+- Expanded the description to highlight event production, executive-style support for Devora Viictor’s handbag launch, brand storytelling and strategic influencer gifting.
+
 ## Current state (as of 2026-08-13)
 
 - **Background:** Sun-Dried Tomato/Nebulas Blue vertical pinstripe
