@@ -37,7 +37,7 @@ const WORK_EVENTS = [
     id: 'cosmic-desert-party-celsius',
     access: 'Event Activation',
     role: 'CELSIUS Cosmic Desert Party',
-    org: 'Coachella · via CLD PR',
+    org: 'CLD PR · Coachella 2024',
     dateDisplay: 'April 12, 2024',
     sortDate: '2024-04-12',
     description: [
