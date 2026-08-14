@@ -738,6 +738,11 @@ the fact from git history alone (reverted work often leaves no trace in
 - Highlighted events-team logistics and guest-flow support, along with responsibility for guest checkout and book distribution.
 - Added Nikoline’s supplied Q&A photo as the event cover and placed the event chronologically between the December 2024 Carbone launch and September 2024 Roger Federer signing.
 
+### 2026-08-14 — Event grid balanced
+
+- Changed the computer layout for “Where I’ve Been” to five equal columns, allowing the ten current events to form two even rows of five.
+- Preserved the flexible, smaller-column layout on iOS and other narrow screens.
+
 ## Current state (as of 2026-08-14)
 
 - **Background:** Sun-Dried Tomato/Nebulas Blue vertical pinstripe
@@ -760,7 +765,8 @@ the fact from git history alone (reverted work often leaves no trace in
 - **Nav:** Home / About / Work / Contact, centered under a centered masthead
   name, no tagline. `experience.html` is preserved but not visibly linked.
 - **Work page:** "Where I've Been" (interactive photo grid + fitted,
-  swipeable galleries for multi-image events, 10 events) and "What I've
+  swipeable galleries for multi-image events, 10 events arranged in two
+  five-column rows on computer) and "What I've
   Placed" (4 press placements, most-recent-first, each with a real scanned
   PDF clip).
 - **Git:** `design_experiment` and `main` are in sync as of the last
