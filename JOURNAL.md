@@ -691,6 +691,12 @@ the fact from git history alone (reverted work often leaves no trace in
 - Kept the event copy distinct: one bullet focuses on operations while another focuses on guest-facing book education.
 - Changed the event category from “Author Signing” to “Publication Launch & Book Signing.”
 
+### 2026-08-13 — CELSIUS Cosmic Desert Party expanded
+
+- Renamed the event “CELSIUS Cosmic Desert Party.”
+- Added a supplied production photo to the existing event gallery.
+- Expanded the description to distinguish media and influencer outreach, behind-the-scenes production and front-facing VIP guest support.
+
 ## Current state (as of 2026-08-13)
 
 - **Background:** Sun-Dried Tomato/Nebulas Blue vertical pinstripe

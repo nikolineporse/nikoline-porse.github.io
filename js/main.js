@@ -36,13 +36,18 @@ const WORK_EVENTS = [
   {
     id: 'cosmic-desert-party-celsius',
     access: 'Event Activation',
-    role: 'Cosmic Desert Party — Celsius',
+    role: 'CELSIUS Cosmic Desert Party',
     org: 'Coachella · via CLD PR',
     dateDisplay: 'April 12, 2024',
     sortDate: '2024-04-12',
-    description: ['Managed press logistics and tastemaker outreach for the activation'],
+    description: [
+      'Built targeted media lists and identified influencers whose audiences and style aligned with the launch of CELSIUS’s Space Vibe Trilogy',
+      'Supported production and setup on-site, from creating decals to preparing the private buses used by performing artists',
+      'Welcomed A-list guests and influencers throughout the event, helping deliver a polished experience and distributing complimentary gift bags'
+    ],
     images: [
-      { src: 'assets/work/cosmic-desert-party-celsius-01.jpg', alt: 'Silver, oxblood and mauve sphere sculptures reflected in a still lake at dusk, palm trees and mountains behind, at the Cosmic Desert Party — Celsius activation' }
+      { src: 'assets/work/cosmic-desert-party-celsius-01.jpg', alt: 'Silver, oxblood and mauve sphere sculptures reflected in a still lake at dusk, palm trees and mountains behind, at the CELSIUS Cosmic Desert Party' },
+      { src: 'assets/work/celsius-cosmic-desert-party-02.jpg', alt: 'The outdoor performance stage and palm-lined event grounds during setup for the CELSIUS Cosmic Desert Party at sunset' }
     ]
   },
   {
