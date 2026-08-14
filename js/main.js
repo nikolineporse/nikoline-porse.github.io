@@ -19,7 +19,7 @@ const WORK_EVENTS = [
     id: 'achille-salvagni-launch',
     access: 'Publication Launch',
     role: 'An Evening with Achille Salvagni',
-    org: 'Assouline · 817 Madison Avenue',
+    org: 'Assouline',
     dateDisplay: 'May 13, 2026',
     sortDate: '2026-05-13',
     description: [
@@ -28,9 +28,9 @@ const WORK_EVENTS = [
       'Helped guests connect with the story behind the release and the cultural world surrounding Salvagni’s work'
     ],
     images: [
-      { src: 'assets/work/achille-salvagni-launch-01.jpg', alt: 'Copies of the Assouline monograph Achille Salvagni displayed on a round wooden table beneath a sculptural pendant light at the 817 Madison Avenue launch reception' },
-      { src: 'assets/work/achille-salvagni-launch-02.jpg', alt: 'Guests gathered beneath an installation of suspended Achille Salvagni books during the Assouline launch reception at 817 Madison Avenue' },
-      { src: 'assets/work/achille-salvagni-launch-03.jpg', alt: 'Achille Salvagni books displayed among furniture, lighting, and decorative objects in a warm red room at Assouline 817 Madison Avenue' }
+      { src: 'assets/work/achille-salvagni-launch-01.jpg', alt: 'Copies of the Assouline monograph Achille Salvagni displayed on a round wooden table beneath a sculptural pendant light at the launch reception' },
+      { src: 'assets/work/achille-salvagni-launch-02.jpg', alt: 'Guests gathered beneath an installation of suspended Achille Salvagni books during the Assouline launch reception' },
+      { src: 'assets/work/achille-salvagni-launch-03.jpg', alt: 'Achille Salvagni books displayed among furniture, lighting, and decorative objects in a warm red room at Assouline' }
     ]
   },
   {
