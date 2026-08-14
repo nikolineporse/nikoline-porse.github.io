@@ -84,6 +84,25 @@ const WORK_EVENTS = [
     ]
   },
   {
+    id: 'astr-danielle-alix-launch-dinner',
+    access: 'Launch Dinner',
+    role: 'ASTR The Label x Danielle & Alix',
+    org: 'CLD PR',
+    dateDisplay: 'September 2025',
+    sortDate: '2025-09-01',
+    description: [
+      'Welcomed guests to the intimate pre-NYFW launch dinner for the Fall 2025 Style Edit at Cathédrale, managed check-in and directed attendees through the space',
+      'Supported event production and setup, including branded decal placement and preparing curated gift bags for the invite-only crowd',
+      'Helped create a polished arrival experience for fashion insiders celebrating Danielle O’Connell and Alix Gropper’s second collaboration with ASTR The Label'
+    ],
+    images: [
+      { src: 'assets/work/astr-danielle-alix-launch-03.jpg', alt: 'Gold and silver Ettika jewelry arranged for gifting at the ASTR The Label x Danielle & Alix launch dinner' },
+      { src: 'assets/work/astr-danielle-alix-launch-02.jpg', alt: 'The ASTR The Label Fall 2025 edit displayed beside an Ettika jewelry gifting station on Cathédrale’s plant-filled patio' },
+      { src: 'assets/work/astr-danielle-alix-launch-01.jpg', alt: 'Danielle O’Connell and Alix Gropper welcoming guests beneath ASTR The Label x Danielle & Alix branding at the Cathédrale launch dinner' },
+      { src: 'assets/work/astr-danielle-alix-launch-04.jpg', alt: 'A candlelit dinner table with floral arrangements and ASTR The Label menus beneath a lush plant wall at Cathédrale' }
+    ]
+  },
+  {
     id: 'point-of-view-beauty-pop-up',
     access: 'Freelance Activation',
     role: 'Point of View Beauty Pop-Up',

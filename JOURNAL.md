@@ -713,6 +713,12 @@ the fact from git history alone (reverted work often leaves no trace in
 - Converted a supplied HEIC team photo to a browser-friendly JPEG and added it to the Point of View Beauty Pop-Up gallery.
 - Added three more supplied photos. A supplied video was tested and removed after it did not load reliably, keeping the gallery photo-only.
 
+### 2026-08-13 — ASTR The Label launch dinner added
+
+- Added “ASTR The Label x Danielle & Alix,” a September 2025 pre-NYFW CLD PR launch dinner at Cathédrale.
+- Highlighted guest greeting and check-in, arrival flow, decal setup and gift-bag preparation.
+- Added four supplied photos as a fitted, swipeable gallery, using the jewelry close-up as the event cover.
+
 ## Current state (as of 2026-08-13)
 
 - **Background:** Sun-Dried Tomato/Nebulas Blue vertical pinstripe
@@ -735,7 +741,7 @@ the fact from git history alone (reverted work often leaves no trace in
 - **Nav:** Home / About / Work / Contact, centered under a centered masthead
   name, no tagline. `experience.html` is preserved but not visibly linked.
 - **Work page:** "Where I've Been" (interactive photo grid + fitted,
-  swipeable galleries for multi-image events, 6 events) and "What I've
+  swipeable galleries for multi-image events, 7 events) and "What I've
   Placed" (4 press placements, most-recent-first, each with a real scanned
   PDF clip).
 - **Git:** `design_experiment` and `main` are in sync as of the last
