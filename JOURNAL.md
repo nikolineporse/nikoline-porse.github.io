@@ -708,6 +708,11 @@ the fact from git history alone (reverted work often leaves no trace in
 - Expanded the description to highlight event production, executive-style support for Devora Viictor’s handbag launch, brand storytelling and strategic influencer gifting.
 - Renamed the event “New York Fashion Week Gifting Suite.”
 
+### 2026-08-13 — Point of View Beauty gallery expanded
+
+- Converted a supplied HEIC team photo to a browser-friendly JPEG and added it to the Point of View Beauty Pop-Up gallery.
+- Added three more supplied photos. A supplied video was tested and removed after it did not load reliably, keeping the gallery photo-only.
+
 ## Current state (as of 2026-08-13)
 
 - **Background:** Sun-Dried Tomato/Nebulas Blue vertical pinstripe

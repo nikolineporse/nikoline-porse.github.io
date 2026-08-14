@@ -96,7 +96,11 @@ const WORK_EVENTS = [
       "Helped host what also served as a meet-and-greet, as TikTok beauty influencer and Point of View founder Mikayla Nogueira was on-site to celebrate the brand's new chapter with her followers and fans"
     ],
     images: [
-      { src: 'assets/work/point-of-view-beauty-pop-up-01.jpg', alt: 'Point of View Beauty skincare products — Drip It, Drench It, Whip It, Glaze It, and Amp It — displayed on a white pedestal beneath a large white floral arrangement against a blue wood-paneled wall' }
+      { src: 'assets/work/point-of-view-beauty-pop-up-01.jpg', alt: 'Point of View Beauty skincare products — Drip It, Drench It, Whip It, Glaze It, and Amp It — displayed on a white pedestal beneath a large white floral arrangement against a blue wood-paneled wall' },
+      { src: 'assets/work/point-of-view-beauty-pop-up-02.jpg', alt: 'The Point of View Beauty team gathered inside the blue pop-up space beside product displays and branded gift bags' },
+      { src: 'assets/work/point-of-view-beauty-pop-up-03.jpg', alt: 'Point of View Beauty campaign posters filling the illuminated windows outside the pop-up' },
+      { src: 'assets/work/point-of-view-beauty-pop-up-04.jpg', alt: 'Point of View Beauty products, informational cards, campaign posters, and gift bags arranged on a blue display shelf' },
+      { src: 'assets/work/point-of-view-beauty-pop-up-05.jpg', alt: 'Two Point of View Beauty team members welcoming guests outside the pop-up' }
     ]
   },
   {
