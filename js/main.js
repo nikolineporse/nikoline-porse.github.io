@@ -53,7 +53,7 @@ const WORK_EVENTS = [
   {
     id: 'nyfw-gifting-suites',
     access: 'Event Activation',
-    role: 'NYFW Gifting Suites',
+    role: 'New York Fashion Week Gifting Suite',
     org: 'CLD PR',
     dateDisplay: 'September 2024',
     sortDate: '2024-09-15',

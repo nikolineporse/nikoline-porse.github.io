@@ -706,6 +706,7 @@ the fact from git history alone (reverted work often leaves no trace in
 
 - Simplified the organization label to “CLD PR” and added a supplied rooftop event photo to the gallery.
 - Expanded the description to highlight event production, executive-style support for Devora Viictor’s handbag launch, brand storytelling and strategic influencer gifting.
+- Renamed the event “New York Fashion Week Gifting Suite.”
 
 ## Current state (as of 2026-08-13)
 
