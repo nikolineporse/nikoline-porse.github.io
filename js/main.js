@@ -229,9 +229,10 @@ function renderWorkEvents() {
 
   let html = '';
   if (withPhotos.length) {
-    html += `<ul class="work-grid">${withPhotos.map(buildTile).join('')}</ul>`;
+    html += `<ul class="work-grid" id="workEventGrid">${withPhotos.map(buildTile).join('')}</ul>`;
   }
   html += withoutPhotos.map(buildCredentialCard).join('');
+  html += '<button type="button" class="ios-events-reveal" aria-controls="workEventGrid" aria-expanded="false">See all events ↓</button>';
   container.innerHTML = html;
 
   container.querySelectorAll('.work-tile').forEach(tile => {
@@ -239,6 +240,12 @@ function renderWorkEvents() {
       e.preventDefault();
       openEventModal(tile.getAttribute('data-event-id'));
     });
+  });
+
+  container.querySelector('.ios-events-reveal')?.addEventListener('click', (event) => {
+    const expanded = container.classList.toggle('is-expanded');
+    event.currentTarget.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+    event.currentTarget.textContent = expanded ? 'Show fewer events ↑' : 'See all events ↓';
   });
 }
 

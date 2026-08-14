@@ -489,6 +489,44 @@ nav.masthead-nav a[aria-current="page"] {
   transform: translateY(0);
 }
 
+.work-events .ios-events-reveal {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .work-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .work-tile-label {
+    transform: translateY(0);
+    padding: 6px 7px 5px;
+    font-size: 0.68rem;
+    background: rgba(255, 255, 255, 0.94);
+  }
+
+  .work-grid > li:nth-child(n + 5) {
+    display: none;
+  }
+
+  .work-events.is-expanded .work-grid > li {
+    display: list-item;
+  }
+
+  .work-events .ios-events-reveal {
+    display: block;
+    margin: -10px auto 30px;
+    border: 2px solid var(--oxblood);
+    background: var(--paper);
+    color: var(--ink);
+    padding: 12px 18px;
+    font: 600 0.78rem/1 var(--font-display);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+}
+
 .event-modal {
   border: none;
   padding: 0;

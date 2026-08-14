@@ -743,6 +743,12 @@ the fact from git history alone (reverted work often leaves no trace in
 - Changed the computer layout for “Where I’ve Been” to five equal columns, allowing the ten current events to form two even rows of five.
 - Preserved the flexible, smaller-column layout on iOS and other narrow screens.
 
+### 2026-08-14 — iOS event grid shortened with reveal control
+
+- Kept the computer “Where I’ve Been” grid unchanged at two rows of five.
+- On iOS only, show the four newest events first in a compact two-column grid with visible titles.
+- Added a “See all events” control that reveals the remaining six events and can collapse the section again, reducing the initial amount of vertical scrolling without hiding access to any work.
+
 ## Current state (as of 2026-08-14)
 
 - **Background:** Sun-Dried Tomato/Nebulas Blue vertical pinstripe
@@ -766,7 +772,8 @@ the fact from git history alone (reverted work often leaves no trace in
   name, no tagline. `experience.html` is preserved but not visibly linked.
 - **Work page:** "Where I've Been" (interactive photo grid + fitted,
   swipeable galleries for multi-image events, 10 events arranged in two
-  five-column rows on computer) and "What I've
+  five-column rows on computer; four initially visible with a reveal control
+  on iOS) and "What I've
   Placed" (4 press placements, most-recent-first, each with a real scanned
   PDF clip).
 - **Git:** `design_experiment` and `main` are in sync as of the last
