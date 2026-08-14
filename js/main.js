@@ -84,6 +84,22 @@ const WORK_EVENTS = [
     ]
   },
   {
+    id: 'the-mark-book-launch',
+    access: 'Cocktail Reception & Publication Launch',
+    role: 'The Mark Book Launch',
+    org: 'Assouline x The Mark Hotel',
+    dateDisplay: 'December 11, 2025',
+    sortDate: '2025-12-11',
+    description: [
+      'Assisted with event setup and thoughtful product placement for an intimate cocktail reception celebrating The Mark, Assouline’s limited-edition volume honoring the hotel’s legacy',
+      'Socialized with guests and served as an on-site resource, sharing details about the new release and the story behind the collaboration',
+      'Helped create a polished guest experience for the private gathering, with Martha Stewart among the notable attendees'
+    ],
+    images: [
+      { src: 'assets/work/the-mark-book-launch-01.jpg', alt: 'Two white dogs wearing navy The Mark shirts reading “take me to the mark” on the hotel’s red patterned carpet during the book launch cocktail reception' }
+    ]
+  },
+  {
     id: 'astr-danielle-alix-launch-dinner',
     access: 'Launch Dinner',
     role: 'ASTR The Label x Danielle & Alix',

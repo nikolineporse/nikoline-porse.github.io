@@ -719,7 +719,13 @@ the fact from git history alone (reverted work often leaves no trace in
 - Highlighted guest greeting and check-in, arrival flow, decal setup and gift-bag preparation.
 - Added four supplied photos as a fitted, swipeable gallery, using the jewelry close-up as the event cover.
 
-## Current state (as of 2026-08-13)
+### 2026-08-14 — The Mark book launch added
+
+- Added “The Mark Book Launch,” a December 11, 2025 Assouline x The Mark Hotel cocktail reception.
+- Highlighted event setup, product placement and guest education, with a tasteful mention of Martha Stewart among the attendees.
+- Used only Nikoline’s supplied dog photo; the separate BFA image was not added because photo credit alone does not establish publication permission.
+
+## Current state (as of 2026-08-14)
 
 - **Background:** Sun-Dried Tomato/Nebulas Blue vertical pinstripe
   (`--pattern-stripe-a` / `--pattern-stripe-b`), faded with a 55% white
@@ -741,7 +747,7 @@ the fact from git history alone (reverted work often leaves no trace in
 - **Nav:** Home / About / Work / Contact, centered under a centered masthead
   name, no tagline. `experience.html` is preserved but not visibly linked.
 - **Work page:** "Where I've Been" (interactive photo grid + fitted,
-  swipeable galleries for multi-image events, 7 events) and "What I've
+  swipeable galleries for multi-image events, 8 events) and "What I've
   Placed" (4 press placements, most-recent-first, each with a real scanned
   PDF clip).
 - **Git:** `design_experiment` and `main` are in sync as of the last
