@@ -48,6 +48,7 @@ function initPaletteLab() {
   if (!lab) return;
 
   const inputs = [...lab.querySelectorAll('[data-palette-token]')];
+  const pickers = [...lab.querySelectorAll('[data-palette-picker]')];
   const status = lab.querySelector('[data-palette-status]');
   let palette = initialPalette || { ...PALETTE_DEFAULTS };
 
@@ -59,8 +60,10 @@ function initPaletteLab() {
     inputs.forEach(input => {
       const color = palette[input.dataset.paletteToken];
       input.value = color;
-      input.style.setProperty('--palette-swatch', color);
       input.removeAttribute('aria-invalid');
+    });
+    pickers.forEach(picker => {
+      picker.value = palette[picker.dataset.palettePicker];
     });
   }
 
@@ -94,6 +97,14 @@ function initPaletteLab() {
       });
       saveAndApply();
       showStatus('Five-color palette applied.');
+    });
+  });
+
+  pickers.forEach(picker => {
+    picker.addEventListener('input', () => {
+      palette[picker.dataset.palettePicker] = normalizeHex(picker.value);
+      saveAndApply();
+      showStatus('Preview saved locally.');
     });
   });
 

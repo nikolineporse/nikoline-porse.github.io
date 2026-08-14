@@ -801,10 +801,15 @@ footer.site-footer p {
   gap: 7px;
 }
 
-.palette-lab-fields input {
+.palette-lab-control {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 30px;
+  gap: 5px;
+}
+
+.palette-lab-fields input[type="text"] {
   width: 100%;
   border: 1px solid #777;
-  border-left: 14px solid var(--palette-swatch, #fff);
   border-radius: 0;
   background: #fff;
   color: #111;
@@ -813,8 +818,26 @@ footer.site-footer p {
   text-transform: uppercase;
 }
 
-.palette-lab-fields input[aria-invalid="true"] {
+.palette-lab-fields input[type="text"][aria-invalid="true"] {
   border-color: #c00;
+}
+
+.palette-lab-fields input[type="color"] {
+  width: 30px;
+  height: 28px;
+  border: 1px solid #777;
+  border-radius: 0;
+  background: #fff;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.palette-lab-fields input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.palette-lab-fields input[type="color"]::-webkit-color-swatch {
+  border: 0;
 }
 
 .palette-lab-actions {
