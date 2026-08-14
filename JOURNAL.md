@@ -697,6 +697,11 @@ the fact from git history alone (reverted work often leaves no trace in
 - Added a supplied production photo to the existing event gallery.
 - Expanded the description to distinguish media and influencer outreach, behind-the-scenes production and front-facing VIP guest support.
 
+### 2026-08-13 — Roger Federer event expanded
+
+- Renamed the event “Roger Federer Book Signing Event” and categorized it as a publication launch and book signing.
+- Expanded the description to highlight invitation-list collaboration, the rapid ticket sellout, guest check-in and flow, and support for Assouline’s events and PR teams.
+
 ## Current state (as of 2026-08-13)
 
 - **Background:** Sun-Dried Tomato/Nebulas Blue vertical pinstripe

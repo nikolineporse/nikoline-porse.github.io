@@ -64,12 +64,16 @@ const WORK_EVENTS = [
   },
   {
     id: 'roger-federer-publication',
-    access: 'Product Launch',
-    role: 'Roger Federer — Limited-Edition Publication',
+    access: 'Publication Launch & Book Signing',
+    role: 'Roger Federer Book Signing Event',
     org: 'Assouline',
     dateDisplay: 'September 4, 2024',
     sortDate: '2024-09-04',
-    description: ['Partnered with in-house PR and events teams to plan the launch'],
+    description: [
+      'Collaborated with colleagues on the invitation list for the limited-capacity launch of Federer, with tickets selling out within hours of going live',
+      'Managed guest check-in and flow as attendees arrived to meet Roger Federer and receive signed, personalized copies of the publication',
+      'Supported Assouline’s events and PR teams throughout the evening, helping keep the high-energy launch polished, organized and running smoothly'
+    ],
     images: [
       { src: 'assets/work/roger-federer-limited-edition-publication-01.jpg', alt: 'Roger Federer seated at a signing table, pen in hand, surrounded by stacks of his limited-edition Assouline publication displayed against a red accent wall' }
     ]
