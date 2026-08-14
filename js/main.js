@@ -100,6 +100,21 @@ const WORK_EVENTS = [
     ]
   },
   {
+    id: 'alain-elkann-interviews-volume-ii',
+    access: 'Publication Launch, Q&A & Book Signing',
+    role: 'Alain Elkann Interviews: Volume II',
+    org: 'Assouline',
+    dateDisplay: 'October 23, 2024',
+    sortDate: '2024-10-23',
+    description: [
+      'Supported Assouline’s events team with logistics and guest flow throughout a Q&A celebrating the release of Alain Elkann Interviews: Volume II',
+      'Managed guest checkout and book distribution, then helped transition attendees smoothly into Alain Elkann’s book signing'
+    ],
+    images: [
+      { src: 'assets/work/alain-elkann-interviews-volume-ii-01.jpg', alt: 'Four panelists participating in the Assouline Q&A celebrating the release of Alain Elkann Interviews: Volume II' }
+    ]
+  },
+  {
     id: 'the-mark-book-launch',
     access: 'Cocktail Reception & Publication Launch',
     role: 'The Mark Book Launch',
