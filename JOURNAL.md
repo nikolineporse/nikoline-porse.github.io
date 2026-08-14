@@ -725,6 +725,13 @@ the fact from git history alone (reverted work often leaves no trace in
 - Highlighted event setup, product placement and guest education, with a tasteful mention of Martha Stewart among the attendees.
 - Used only Nikoline’s supplied dog photo; the separate BFA image was not added because photo credit alone does not establish publication permission.
 
+### 2026-08-14 — Carbone book launch added
+
+- Added “Carbone Book Launch,” a December 11, 2024 Assouline publication launch, Q&A and signing at ZZ’s Club.
+- Highlighted flexible events-team support and responsibility for book checkout and guest flow into the signing.
+- Used only Nikoline’s two supplied event photos; the separate Assouline website image was not added because its terms require written permission for reproduction.
+- Used the wider cocktail-reception photo as the gallery cover, followed by the Q&A image.
+
 ## Current state (as of 2026-08-14)
 
 - **Background:** Sun-Dried Tomato/Nebulas Blue vertical pinstripe
@@ -747,7 +754,7 @@ the fact from git history alone (reverted work often leaves no trace in
 - **Nav:** Home / About / Work / Contact, centered under a centered masthead
   name, no tagline. `experience.html` is preserved but not visibly linked.
 - **Work page:** "Where I've Been" (interactive photo grid + fitted,
-  swipeable galleries for multi-image events, 8 events) and "What I've
+  swipeable galleries for multi-image events, 9 events) and "What I've
   Placed" (4 press placements, most-recent-first, each with a real scanned
   PDF clip).
 - **Git:** `design_experiment` and `main` are in sync as of the last

@@ -84,6 +84,22 @@ const WORK_EVENTS = [
     ]
   },
   {
+    id: 'carbone-book-launch',
+    access: 'Publication Launch, Q&A & Book Signing',
+    role: 'Carbone Book Launch',
+    org: 'Assouline · ZZ’s Club',
+    dateDisplay: 'December 11, 2024',
+    sortDate: '2024-12-11',
+    description: [
+      'Provided flexible on-site support to Assouline’s events team throughout the private cocktail reception, Q&A and signing with Mario Carbone and Jeff Zalaznick',
+      'Managed book checkout before the signing, guiding guests through their purchases and maintaining an organized flow into the signing line'
+    ],
+    images: [
+      { src: 'assets/work/carbone-book-launch-02.jpg', alt: 'Guests gathered for the Carbone publication launch cocktail reception in the warmly lit lounge at ZZ’s Club' },
+      { src: 'assets/work/carbone-book-launch-01.jpg', alt: 'A speaker leading the Carbone book launch Q&A beside the fireplace and sculptural chandelier at ZZ’s Club' }
+    ]
+  },
+  {
     id: 'the-mark-book-launch',
     access: 'Cocktail Reception & Publication Launch',
     role: 'The Mark Book Launch',
