@@ -748,6 +748,9 @@ the fact from git history alone (reverted work often leaves no trace in
 - Kept the computer “Where I’ve Been” grid unchanged at two rows of five.
 - On iOS only, show the four newest events first in a compact two-column grid with visible titles.
 - Added a “See all events” control that reveals the remaining six events and can collapse the section again, reducing the initial amount of vertical scrolling without hiding access to any work.
+- Moved every iOS event title into a uniform, compact strip below its full square image so the labels no longer cover or further crop the media; computer title behavior remains unchanged.
+- Centered the iOS event titles beneath their photos and standardized each card's image/title rows so spacing stays even across one-line and multi-line names.
+- Aligned iOS event names to the same top baseline within their uniform title strips, removing the extra-looking vertical space around shorter names such as The Mark and Carbone.
 
 ## Current state (as of 2026-08-14)
 

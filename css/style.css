@@ -497,13 +497,40 @@ nav.masthead-nav a[aria-current="page"] {
   .work-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 8px;
+    align-items: stretch;
+  }
+
+  .work-grid > li {
+    min-width: 0;
+  }
+
+  .work-tile {
+    display: grid;
+    grid-template-rows: auto 3.2rem;
+    aspect-ratio: auto;
+    height: 100%;
+    overflow: visible;
+    background: transparent;
+  }
+
+  .work-tile img {
+    aspect-ratio: 1 / 1;
+    height: auto;
   }
 
   .work-tile-label {
-    transform: translateY(0);
-    padding: 6px 7px 5px;
+    position: static;
+    transform: none;
+    display: block;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 6px 5px;
     font-size: 0.68rem;
-    background: rgba(255, 255, 255, 0.94);
+    line-height: 1.2;
+    text-align: center;
+    border-top: 0;
+    background: var(--paper);
   }
 
   .work-grid > li:nth-child(n + 5) {
