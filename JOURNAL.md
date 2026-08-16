@@ -751,6 +751,7 @@ the fact from git history alone (reverted work often leaves no trace in
 - Moved every iOS event title into a uniform, compact strip below its full square image so the labels no longer cover or further crop the media; computer title behavior remains unchanged.
 - Centered the iOS event titles beneath their photos and standardized each card's image/title rows so spacing stays even across one-line and multi-line names.
 - Aligned iOS event names to the same top baseline within their uniform title strips, removing the extra-looking vertical space around shorter names such as The Mark and Carbone.
+- Refreshed the “Where I’ve Been” responsibility bullets so each sentence opens with a distinct action verb, reducing repeated “supported,” “managed,” “helped,” “welcomed” and “assisted” phrasing without changing the scope of Nikoline’s work.
 
 ## Current state (as of 2026-08-14)
 

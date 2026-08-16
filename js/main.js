@@ -24,8 +24,8 @@ const WORK_EVENTS = [
     sortDate: '2026-05-13',
     description: [
       "Represented Assouline throughout an intimate cocktail reception celebrating the launch of Achille Salvagni, a new monograph dedicated to the Rome-based designer's blend of ancient craftsmanship and modern imagination",
-      'Welcomed collectors, designers, gallerists, and tastemakers, shared memorable details about the publication and served as an on-site resource for guest questions',
-      'Helped guests connect with the story behind the release and the cultural world surrounding Salvagni’s work'
+      'Engaged collectors, designers, gallerists, and tastemakers by sharing memorable details about the publication and serving as an on-site resource for guest questions',
+      'Connected guests with the story behind the release and the cultural world surrounding Salvagni’s work'
     ],
     images: [
       { src: 'assets/work/achille-salvagni-launch-01.jpg', alt: 'Copies of the Assouline monograph Achille Salvagni displayed on a round wooden table beneath a sculptural pendant light at the launch reception' },
@@ -42,7 +42,7 @@ const WORK_EVENTS = [
     sortDate: '2024-04-12',
     description: [
       'Built targeted media lists and identified influencers whose audiences and style aligned with the launch of CELSIUS’s Space Vibe Trilogy',
-      'Supported production and setup on-site, from creating decals to preparing the private buses used by performing artists',
+      'Executed production and setup tasks on-site, from creating decals to preparing the private buses used by performing artists',
       'Welcomed A-list guests and influencers throughout the event, helping deliver a polished experience and distributing complimentary gift bags'
     ],
     images: [
@@ -58,7 +58,7 @@ const WORK_EVENTS = [
     dateDisplay: 'September 2024',
     sortDate: '2024-09-15',
     description: [
-      'Supported end-to-end production for CLD PR’s high-profile NYFW gifting suite, connecting tastemakers and VIP creators with emerging brand partners',
+      'Helped execute end-to-end production for CLD PR’s high-profile NYFW gifting suite, connecting tastemakers and VIP creators with emerging brand partners',
       'Provided hands-on executive support to Devora Viictor as the luxury handbag designer debuted her brand at the event',
       'Introduced the brand story to influencers and used real-time audience insight to strategically gift handbags to high-reach creators'
     ],
@@ -76,8 +76,8 @@ const WORK_EVENTS = [
     sortDate: '2024-09-04',
     description: [
       'Collaborated with colleagues on the invitation list for the limited-capacity launch of Federer, with tickets selling out within hours of going live',
-      'Managed guest check-in and flow as attendees arrived to meet Roger Federer and receive signed, personalized copies of the publication',
-      'Supported Assouline’s events and PR teams throughout the evening, helping keep the high-energy launch polished, organized and running smoothly'
+      'Oversaw guest check-in and flow as attendees arrived to meet Roger Federer and receive signed, personalized copies of the publication',
+      'Partnered with Assouline’s events and PR teams throughout the evening, helping keep the high-energy launch polished, organized and running smoothly'
     ],
     images: [
       { src: 'assets/work/roger-federer-limited-edition-publication-01.jpg', alt: 'Roger Federer seated at a signing table, pen in hand, surrounded by stacks of his limited-edition Assouline publication displayed against a red accent wall' }
@@ -91,8 +91,8 @@ const WORK_EVENTS = [
     dateDisplay: 'December 11, 2024',
     sortDate: '2024-12-11',
     description: [
-      'Provided flexible on-site support to Assouline’s events team throughout the private cocktail reception, Q&A and signing with Mario Carbone and Jeff Zalaznick',
-      'Managed book checkout before the signing, guiding guests through their purchases and maintaining an organized flow into the signing line'
+      'Stepped in wherever Assouline’s events team needed support throughout the private cocktail reception, Q&A and signing with Mario Carbone and Jeff Zalaznick',
+      'Handled book checkout before the signing, guiding guests through their purchases and maintaining an organized flow into the signing line'
     ],
     images: [
       { src: 'assets/work/carbone-book-launch-02.jpg', alt: 'Guests gathered for the Carbone publication launch cocktail reception in the warmly lit lounge at ZZ’s Club' },
@@ -107,8 +107,8 @@ const WORK_EVENTS = [
     dateDisplay: 'October 23, 2024',
     sortDate: '2024-10-23',
     description: [
-      'Supported Assouline’s events team with logistics and guest flow throughout a Q&A celebrating the release of Alain Elkann Interviews: Volume II',
-      'Managed guest checkout and book distribution, then helped transition attendees smoothly into Alain Elkann’s book signing'
+      'Coordinated with Assouline’s events team on logistics and guest flow throughout a Q&A celebrating the release of Alain Elkann Interviews: Volume II',
+      'Facilitated guest checkout and book distribution, then helped transition attendees smoothly into Alain Elkann’s book signing'
     ],
     images: [
       { src: 'assets/work/alain-elkann-interviews-volume-ii-01.jpg', alt: 'Four panelists participating in the Assouline Q&A celebrating the release of Alain Elkann Interviews: Volume II' }
@@ -122,9 +122,9 @@ const WORK_EVENTS = [
     dateDisplay: 'December 11, 2025',
     sortDate: '2025-12-11',
     description: [
-      'Assisted with event setup and thoughtful product placement for an intimate cocktail reception celebrating The Mark, Assouline’s limited-edition volume honoring the hotel’s legacy',
-      'Socialized with guests and served as an on-site resource, sharing details about the new release and the story behind the collaboration',
-      'Helped create a polished guest experience for the private gathering, with Martha Stewart among the notable attendees'
+      'Contributed to event setup and thoughtful product placement for an intimate cocktail reception celebrating The Mark, Assouline’s limited-edition volume honoring the hotel’s legacy',
+      'Informed guests as an on-site resource, sharing details about the new release and the story behind the collaboration',
+      'Maintained a polished guest experience throughout the private gathering, with Martha Stewart among the notable attendees'
     ],
     images: [
       { src: 'assets/work/the-mark-book-launch-01.jpg', alt: 'Two white dogs wearing navy The Mark shirts reading “take me to the mark” on the hotel’s red patterned carpet during the book launch cocktail reception' }
@@ -138,9 +138,9 @@ const WORK_EVENTS = [
     dateDisplay: 'September 2025',
     sortDate: '2025-09-01',
     description: [
-      'Welcomed guests to the intimate pre-NYFW launch dinner for the Fall 2025 Style Edit at Cathédrale, managed check-in and directed attendees through the space',
-      'Supported event production and setup, including branded decal placement and preparing curated gift bags for the invite-only crowd',
-      'Helped create a polished arrival experience for fashion insiders celebrating Danielle O’Connell and Alix Gropper’s second collaboration with ASTR The Label'
+      'Greeted guests at the intimate pre-NYFW launch dinner for the Fall 2025 Style Edit at Cathédrale, managed check-in and directed attendees through the space',
+      'Placed branded decals and prepared curated gift bags as part of the event production and setup for the invite-only crowd',
+      'Shaped a polished arrival experience for fashion insiders celebrating Danielle O’Connell and Alix Gropper’s second collaboration with ASTR The Label'
     ],
     images: [
       { src: 'assets/work/astr-danielle-alix-launch-03.jpg', alt: 'Gold and silver Ettika jewelry arranged for gifting at the ASTR The Label x Danielle & Alix launch dinner' },
@@ -157,9 +157,9 @@ const WORK_EVENTS = [
     dateDisplay: 'July 25–26, 2025',
     sortDate: '2025-07-25',
     description: [
-      "Assisted the Point of View Beauty team with brand storytelling and on-site education for the brand's first-ever pop-up, checking out customers interested in purchasing product",
-      'Supported event production — helping with setup and breakdown, and mapping the smartest flow of foot traffic through the space',
-      "Helped host what also served as a meet-and-greet, as TikTok beauty influencer and Point of View founder Mikayla Nogueira was on-site to celebrate the brand's new chapter with her followers and fans"
+      "Shared the Point of View Beauty story and provided on-site education at the brand's first-ever pop-up, checking out customers interested in purchasing product",
+      'Mapped the smartest flow of foot traffic through the space while assisting with production, setup and breakdown',
+      "Supported the meet-and-greet element of the activation as TikTok beauty influencer and Point of View founder Mikayla Nogueira celebrated the brand's new chapter with her followers and fans"
     ],
     images: [
       { src: 'assets/work/point-of-view-beauty-pop-up-01.jpg', alt: 'Point of View Beauty skincare products — Drip It, Drench It, Whip It, Glaze It, and Amp It — displayed on a white pedestal beneath a large white floral arrangement against a blue wood-paneled wall' },
@@ -177,7 +177,7 @@ const WORK_EVENTS = [
     dateDisplay: 'February 14, 2026',
     sortDate: '2026-02-14',
     description: [
-      'Managed event flow and on-site upkeep across the 50-person ticketed experience and public Assouline x Rose’s Flower Shop activation',
+      'Directed event flow and on-site upkeep across the 50-person ticketed experience and public Assouline x Rose’s Flower Shop activation',
       'Served as a guest-facing resource, sharing details about Derrick Rose: The Poohprint and answering questions throughout the event',
       'Worked as Derrick Rose’s right hand throughout the event, providing hands-on support wherever it was needed'
     ],
