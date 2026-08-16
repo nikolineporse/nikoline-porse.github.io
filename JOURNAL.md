@@ -752,6 +752,7 @@ the fact from git history alone (reverted work often leaves no trace in
 - Centered the iOS event titles beneath their photos and standardized each card's image/title rows so spacing stays even across one-line and multi-line names.
 - Aligned iOS event names to the same top baseline within their uniform title strips, removing the extra-looking vertical space around shorter names such as The Mark and Carbone.
 - Refreshed the “Where I’ve Been” responsibility bullets so each sentence opens with a distinct action verb, reducing repeated “supported,” “managed,” “helped,” “welcomed” and “assisted” phrasing without changing the scope of Nikoline’s work.
+- Replaced the generic Work-page introduction with a more personal, confident summary connecting national press placements, publication launches and influencer events to audience awareness and attention to detail.
 
 ## Current state (as of 2026-08-14)
 
