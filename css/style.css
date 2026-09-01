@@ -279,6 +279,13 @@ nav.masthead-nav a[aria-current="page"] {
 
 .lede + .lede { margin-top: 16px; }
 
+/* Work page intro sits alone in a wide box with nothing else beneath it,
+   so the usual 700px reading-width cap leaves a lot of dead space on the
+   right; let it breathe wider here specifically. */
+#work-intro .lede {
+  max-width: 900px;
+}
+
 /* ---------- About portrait ---------- */
 
 .about-intro {
