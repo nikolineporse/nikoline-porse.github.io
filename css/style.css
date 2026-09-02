@@ -670,6 +670,319 @@ nav.masthead-nav a[aria-current="page"] {
   }
 }
 
+/* ---------- Social media case studies ---------- */
+
+#social-intro .lede {
+  max-width: 890px;
+  margin-bottom: 0;
+}
+
+.social-case-overview .wrap {
+  border-color: var(--ink);
+}
+
+.social-case-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(230px, 0.7fr);
+  gap: 64px;
+  align-items: start;
+}
+
+.social-client-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2rem, 4.8vw, 3.35rem);
+  line-height: 1.08;
+  margin: 0 0 10px;
+}
+
+.social-client-focus {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0 0 28px;
+}
+
+.social-case-header .lede {
+  max-width: 690px;
+  margin-bottom: 0;
+}
+
+.social-case-facts {
+  margin: 4px 0 0;
+  border-top: 2px solid var(--ink);
+}
+
+.social-case-facts div {
+  padding: 14px 0 13px;
+  border-bottom: 1px solid var(--slate-light);
+}
+
+.social-case-facts dt,
+.social-secondary-metrics dt {
+  font-family: var(--font-mono);
+  font-size: 0.67rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.social-case-facts dd {
+  margin: 3px 0 0;
+  font-weight: 500;
+}
+
+.social-scope-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  border-top: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+}
+
+.social-scope-item {
+  padding: 24px 24px 24px 0;
+}
+
+.social-scope-item + .social-scope-item {
+  border-left: 1px solid var(--slate-light);
+  padding-left: 24px;
+}
+
+.social-scope-number {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  margin: 0 0 22px;
+}
+
+.social-scope-item h3,
+.social-process h3,
+.social-content-card h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.12rem;
+  line-height: 1.25;
+  margin: 0 0 8px;
+}
+
+.social-scope-item p:last-child,
+.social-process p,
+.social-content-card p:last-child {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.social-approach-section .lede,
+.social-performance-section .lede,
+.social-content-section .lede {
+  max-width: 760px;
+  margin-bottom: 34px;
+}
+
+.social-process {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 2px solid var(--ink);
+}
+
+.social-process li {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 18px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--slate-light);
+}
+
+.social-process li > span {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  padding-top: 3px;
+}
+
+.social-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+}
+
+.social-metric {
+  padding: 28px 24px 26px 0;
+}
+
+.social-metric + .social-metric {
+  border-left: 1px solid var(--slate-light);
+  padding-left: 24px;
+}
+
+.social-metric strong {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(2.1rem, 4.4vw, 3.45rem);
+  line-height: 1;
+  margin-bottom: 11px;
+}
+
+.social-metric span {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.09em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.social-secondary-metrics {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 18px;
+  margin: 28px 0 0;
+}
+
+.social-secondary-metrics div {
+  min-width: 0;
+}
+
+.social-secondary-metrics dt {
+  line-height: 1.35;
+}
+
+.social-secondary-metrics dd {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 3px 0 0;
+}
+
+.social-metric-note {
+  font-size: 0.78rem;
+  line-height: 1.5;
+  margin: 26px 0 0;
+  max-width: 760px;
+}
+
+.social-content-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.social-content-card {
+  min-width: 0;
+}
+
+.social-content-frame {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 4 / 5;
+  border: 2px solid var(--content-frame);
+  background: var(--paper);
+  margin-bottom: 20px;
+  padding: 24px;
+  text-align: center;
+}
+
+.social-content-frame span {
+  font-family: var(--font-script);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  line-height: 1.5;
+}
+
+.social-content-card .credential-access {
+  margin-bottom: 7px;
+}
+
+.social-case-future .wrap {
+  text-align: center;
+}
+
+.social-case-future .lede {
+  margin: 0 auto 24px;
+}
+
+.social-case-future .cta-row {
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .social-scope-grid,
+  .social-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .social-scope-item:nth-child(3),
+  .social-metric:nth-child(3) {
+    border-left: 0;
+  }
+
+  .social-scope-item:nth-child(n + 3),
+  .social-metric:nth-child(n + 3) {
+    border-top: 1px solid var(--slate-light);
+  }
+
+  .social-secondary-metrics {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 24px;
+  }
+}
+
+@media (max-width: 720px) {
+  .social-case-header {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .social-content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-content-frame {
+    aspect-ratio: 5 / 4;
+  }
+}
+
+@media (max-width: 520px) {
+  .social-scope-grid,
+  .social-metrics,
+  .social-secondary-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .social-scope-item,
+  .social-scope-item + .social-scope-item,
+  .social-metric,
+  .social-metric + .social-metric {
+    border-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .social-scope-item + .social-scope-item,
+  .social-metric + .social-metric {
+    border-top: 1px solid var(--slate-light);
+  }
+
+  .social-secondary-metrics {
+    gap: 0;
+  }
+
+  .social-secondary-metrics div {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--slate-light);
+  }
+
+  .social-secondary-metrics dd {
+    margin: 0;
+  }
+}
+
 /* ---------- Skills ---------- */
 
 .skills-grid {
