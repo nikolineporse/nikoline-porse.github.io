@@ -18,7 +18,7 @@
   --slate: #000000;      /* secondary text — black */
   --slate-light: #DCD5C6; /* hairline rule color on paper */
   --paper-shadow: rgba(32, 29, 27, 0.08);
-  --content-frame: #752329; /* Pantone 19-1531 TCX Sun-Dried Tomato */
+  --content-frame: #000000; /* borders, rules and button accents */
 
   /* -- Type -- */
   --font-display: 'Spectral', 'Georgia', serif;
