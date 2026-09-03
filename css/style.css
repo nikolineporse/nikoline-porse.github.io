@@ -19,8 +19,6 @@
   --slate-light: #DCD5C6; /* hairline rule color on paper */
   --paper-shadow: rgba(32, 29, 27, 0.08);
   --content-frame: #752329; /* Pantone 19-1531 TCX Sun-Dried Tomato */
-  --pattern-stripe-a: #752329; /* Pantone 19-1531 TCX Sun-Dried Tomato */
-  --pattern-stripe-b: #2E62A3; /* Pantone 18-4048 TCX Nebulas Blue */
 
   /* -- Type -- */
   --font-display: 'Spectral', 'Georgia', serif;
@@ -50,14 +48,11 @@ html {
 body {
   margin: 0;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)),
-    repeating-linear-gradient(
-      90deg,
-      var(--pattern-stripe-a) 0px,
-      var(--pattern-stripe-a) 4px,
-      var(--pattern-stripe-b) 4px,
-      var(--pattern-stripe-b) 8px
-    );
+    linear-gradient(rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12)),
+    url('../assets/decor/woven-dot-patchwork-v2.png');
+  background-position: center top;
+  background-repeat: repeat;
+  background-size: 560px auto;
   color: var(--ink);
   font-family: var(--font-body);
   font-weight: 300;
